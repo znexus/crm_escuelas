@@ -1,0 +1,22 @@
+<h1>Tipo de vínculo</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+  </tr>
+
+<% for tipo_vinculo in @tipo_vinculos %>
+  <tr>
+    <td><%=h tipo_vinculo.nombre %></td>
+    <td><%=h tipo_vinculo.tipo %></td>
+    <td><%= link_to 'Show', tipo_vinculo %></td>
+    <td><%= link_to 'Edit', edit_tipo_vinculo_path(tipo_vinculo) %></td>
+    <td><%= link_to 'Destroy', tipo_vinculo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tipo_vinculo', new_tipo_vinculo_path %>

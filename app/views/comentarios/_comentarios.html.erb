@@ -1,0 +1,18 @@
+
+<div id="lista_comentarios_<%= objeto.id %>">
+
+  <%= link_to_function(image_tag("icons/add.png")+"Nuevo", nil, :id => "more_link") do |page|
+    page.visual_effect :toggle_slide, "comentario_form_#{objeto.id}"
+  end
+ %>
+
+  <div id="comentario_form_<%= objeto.id %>" style="display:none">
+    <%= render :partial=>"comentarios/comentario_form", :locals=>{:comentario=>Comentario.new, :objeto=>objeto} %>
+  </div>
+
+  <ol id="comentarios_lista_<%= objeto.id %>" >
+      <%= render :partial=>"comentarios/comentario", :collection=>comentarios %>
+  </ol>
+
+  
+</div>

@@ -1,0 +1,15 @@
+  <li>
+      <p><%= l comentario.created_at, :format=>:short if comentario.created_at? %> | por <%= comentario.user %></p>
+      <p><%= comentario.texto %></p>
+      <p><%= image_tag("icons/clock.png") if comentario.recordatorio %> <%= comentario.recordatorio.to_s(:short)  if comentario.recordatorio%> | 
+      <%= render :partial=>"partials/tags_list", :locals=>{:obj=>comentario} %></p>
+      <% if comentario.monto %>
+      <p>Monto : <%= comentario.monto %> <%= comentario.moneda %></p>
+      <% end %>
+      <% if comentario.monto %>
+      <p> Inicio del viaje: <%= l comentario.fecha_inicio %></p>
+      <% end %>
+      <% if comentario.monto %>
+      <p> Fin del viaje: <%= l comentario.fecha_fin %></p>
+      <% end %>
+  </li>

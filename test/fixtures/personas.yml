@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  apepat: MyString
+  titulo_id: 1
+  sexo_id: 1
+  nacimiento: 2008-08-13
+
+two:
+  nombre: MyString
+  apepat: MyString
+  titulo_id: 1
+  sexo_id: 1
+  nacimiento: 2008-08-13

@@ -1,0 +1,43 @@
+<p>
+  <b>Persona:</b>
+  <%=h @relacion.persona_id %>
+</p>
+
+<p>
+  <b>Institucion:</b>
+  <%=h @relacion.institucion_id %>
+</p>
+
+<p>
+  <b>Tipo vinculo:</b>
+  <%=h @relacion.tipo_vinculo_id %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%=h @relacion.nombre %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @relacion.year %>
+</p>
+
+<p>
+  <b>Gradoseccion:</b>
+  <%=h @relacion.gradoseccion %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @relacion.email %>
+</p>
+
+<p>
+  <b>Telefono:</b>
+  <%=h @relacion.telefono %>
+</p>
+
+
+<%= link_to 'Edit', edit_relacion_path(@relacion) %> |
+<%= link_to 'Back', relacions_path %>

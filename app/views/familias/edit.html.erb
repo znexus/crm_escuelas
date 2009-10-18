@@ -1,0 +1,57 @@
+<h1>Familias</h1>
+
+<div class="f">
+
+  <% form_for(@familia) do |f| %>
+    
+    <fieldset>
+      
+      <% if @familia.new_record? %>
+        <legend>Nueva familia</legend>
+      <% else %>
+        <legend>Modificando a <%= @familia.nombre %></legend>
+      <% end %>
+      
+      <%= error_messages_for :familia %>
+      <%= f.hidden_field :padre_id %>
+      <%= f.hidden_field :madre_id %>
+    
+      <%= f.label :padre, "Padre:" %>
+      <%= text_field_tag  :familia_padre, (@familia.padre.to_s if @familia.padre_id) %>
+      <%= image_tag('dots-white.gif',:id=>"busca_spinner",:style=>"display:none") %>
+      <div id="padre_search" class="auto_complete"></div>
+      <%= auto_complete_field :familia_padre, :update=>"padre_search",
+    					:url=>{:action=>"relacion_search",:controller=>"personas"},
+    					:indicator => "busca_spinner",
+              :after_update_element => "function(element,value){ $('familia_padre_id').value = value.id.split('_').last()}"
+    	%>
+      <br />
+    
+    
+      <%= f.label :madre, "Madre:" %>
+      <%= text_field_tag  :familia_madre, (@familia.madre.to_s if @familia.madre_id) %>
+      <%= image_tag('dots-white.gif',:id=>"busca_spinner2",:style=>"display:none") %>
+      <div id="madre_search" class="auto_complete"></div>
+      <%= auto_complete_field :familia_madre, :update=>"madre_search",
+    					:url=>{:action=>"relacion_search",:controller=>"personas"},
+    					:indicator => "busca_spinner2",
+              :after_update_element => "function(element,value){ $('familia_madre_id').value = value.id.split('_').last()}"
+    	%>
+      <br />
+
+      <%= f.label :tags, "Tags(separados por comas):" %>  
+      <%= f.text_field :tag_list%>
+      <%= image_tag('dots-white.gif',:id=>"spinner",:style=>"display:none") %>
+      <div id="tags" class="auto_complete"></div>
+      <%= auto_complete_field :familia_tag_list, :update=>"tags",
+    					:url=>{:action=>"find",:controller=>"tags"},
+    					:tokens => ",",
+    					:indicator => "spinner" %>
+      <br />
+
+      <%= f.submit "Registrar" %>
+      
+  <% end %>
+</div>
+<%= link_to 'Ver Ficha', @familia unless @familia.new_record?  %>
+<%= link_to 'Cancelar y Regresar', familias_path %>

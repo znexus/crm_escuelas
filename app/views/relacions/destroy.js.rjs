@@ -1,0 +1,3 @@
+
+          page.remove 'relacion'+@id.to_s
+          page.hide 'indica_relacions'

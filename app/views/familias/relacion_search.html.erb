@@ -1,0 +1,5 @@
+<ul class="autocomplete_list">
+  <% @familias.each do |familia| %>
+  <li class="autocomplete_item" id="em_<%= familia.id %>"><%= familia.nombre %></li>
+  <% end %>
+</ul>

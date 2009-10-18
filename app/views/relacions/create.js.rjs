@@ -1,0 +1,5 @@
+
+          page.insert_html :top, 'relacions_list', :partial => "linea", :locals=>{:relacion=>@relacion}
+          page.visual_effect :highlight, 'relacion'+@relacion.id.to_s
+          page.hide 'relacion'
+          page.hide 'indica_relacions'

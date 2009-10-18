@@ -1,0 +1,21 @@
+  <li class="<%= cycle('list-line-odd', 'list-line-even') %>" id="relacion<%= relacion.id %>" >
+		
+		 <%= link_to(relacion.persona,relacion.persona )  %>
+		 en
+		 <%= link_to(relacion.institucion, relacion.institucion) %>
+		 como
+      <%= link_to_remote image_tag('icons/pencil.png', :alt=>"Modificar")+relacion.to_s,
+ 				:update=>"relacion" + relacion.id.to_s, 
+        :before    => "Element.show('indica_relacions')",  
+        :complete  => "Element.hide('indica_relacions'); new Effect.Highlight('relacion"+relacion.id.to_s+"', {duration:0.7})",  
+				:url=>edit_relacion_path(relacion),
+				:method => :get %>
+
+      <%= link_to_remote image_tag('icons/delete.png', :alt=>'Eliminar'),
+ 				:update=>"relacion" + relacion.id.to_s, 
+        :before    => "Element.show('indica_relacions')",  
+        :complete  => "Element.hide('indica_relacions'); new Effect.Highlight('relacion"+relacion.id.to_s+"', {duration:0.7})",  
+				:url => relacion,
+				:method => :delete,
+				:confirm => 'Eliminaré definitivamente la relación. ¿Estás seguro?' %>
+  </li>

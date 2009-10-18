@@ -1,0 +1,103 @@
+<div class="f">
+  <% remote_form_for(comentario, :html => {:class=>"comentarios_form"},
+			:url=> polymorphic_url([objeto,comentario]), 
+			:before=>"Element.show('indica_comentario_#{objeto.id}')",
+			:complete=>"Element.hide('indica_comentario_#{objeto.id}')") do |f| 
+	%>
+  <fieldset>
+    <legend >
+    Nota para <%= objeto %>
+    <%= image_tag("dots-white.gif", :style=>"display:none", :id=>"indica_comentario_#{objeto.id}") %>
+    </legend>
+
+      <%= f.error_messages %>
+      <div id="comentario_mensaje_<%= objeto.id %>"></div>
+      
+      <div class="comentarios_form_izquierda">
+        
+
+        <%= f.text_area :texto, :cols=>80, :rows=>8 %>
+
+
+       </div>  
+       
+       <div class="comentarios_form_derecha">
+         <p><%= f.label :tipo %><br />
+         <%= f.select :tipo,
+                     Comentario::TIPOS,
+                     :prompt => "-Seleccionar tipo-"  %>
+         </p>
+
+          <p><%= f.label :recordatorio, "Recordatorio" %>  <br />
+
+         <%= calendar_box :comentario, :recordatorio,
+               { :class => 'date',
+                 :field_title => 'Fecha de recordatorio',
+                 :button_title => 'Mostrar calendario'},
+               { :firstDay => 1,
+                 :range => [Time.now.year, Time.now.year + 5],
+                 :step => 1,
+                 :showOthers => true,
+                 :cache => true,
+                 :showsTime => true }
+         %>
+          </p>
+        <p>
+        <%= f.label :tags, "Tags(separados por comas):" %>  
+        <%= f.text_field :tag_list%>
+        </p>
+        <%= image_tag('dots-white.gif',:id=>"spinner",:style=>"display:none") %>
+        <div id="tags" class="auto_complete"></div>
+        <%= auto_complete_field :comentario_tag_list, :update=>"tags",
+      					:url=>{:action=>"find",:controller=>"tags"},
+      					:tokens => ",",
+      					:indicator => "spinner" %>
+         </div>  
+       <div class="borrado"></div>
+       <div>
+        <p>
+        <%= f.label :monto, "Monto" %>  
+        <%= f.text_field :monto%>
+        </p>       
+        <p>
+        <%= f.label :moneda, "Moneda" %>  
+         <%= f.select :tipo,
+                     Comentario::MONEDAS.collect {|m| [ m[1], m[2] ] },
+                     :prompt => "-Seleccionar moneda-"  %>
+        </p> 
+
+          <p><%= f.label :fecha_inicio, "Inicio del viaje" %>  <br />
+
+         <%= calendar_box :comentario, :fecha_inicio,
+               { :class => 'date',
+                 :field_title => 'Fecha de viaje',
+                 :button_title => 'Mostrar calendario'},
+               { :firstDay => 1,
+                 :range => [Time.now.year, Time.now.year + 5],
+                 :step => 1,
+                 :showOthers => true,
+                 :cache => true,
+                 :showsTime => false }
+         %>
+          </p>
+
+          <p><%= f.label :fecha_fin, "Fin del viaje" %>  <br />
+
+         <%= calendar_box :comentario, :fecha_fin,
+               { :class => 'date',
+                 :field_title => 'Fecha de viaje',
+                 :button_title => 'Mostrar calendario'},
+               { :firstDay => 1,
+                 :range => [Time.now.year, Time.now.year + 5],
+                 :step => 1,
+                 :showOthers => true,
+                 :cache => true,
+                 :showsTime => false }
+         %>
+          </p>
+
+       </div>
+       <p> <%= f.submit "Registrar" %></p>
+  </fieldset>
+  <% end %>
+</div>

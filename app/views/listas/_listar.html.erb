@@ -1,0 +1,22 @@
+<% unless objeto.blank? %>
+<span class="agregar_lista" id="listar_<%= objeto.id %>"> |
+ <%- lista = objeto.listas.find(:all, :conditions=>["user_id = ?",current_user.id]).first
+    if lista
+     	imagen = 'icons/tick.png'
+     	texto = " Listado"
+     	method = "put"
+   	else
+     	imagen = 'icons/cross.png'
+     	lista = Lista.new
+     	texto = " No listado"
+     	method = "post"
+    end -%>
+     <%= image_tag "dots-white.gif", :style=>"display:none", :id=>"spinner_listar_"+objeto.id.to_s %>
+ <%= link_to_remote image_tag(imagen) + texto, 
+                    :url => polymorphic_path([objeto, lista]),
+                    :before => "Element.show('spinner_listar_"+objeto.id.to_s+"')" ,
+                    :complete => "Element.hide('spinner_listar_"+objeto.id.to_s+"')" ,
+                    :update => "listar_"+objeto.id.to_s,
+                    :method => method -%>
+</span>
+<% end %>

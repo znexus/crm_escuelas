@@ -1,0 +1,4 @@
+
+          page.replace 'relacion'+@relacion.id.to_s, :partial => "linea", :locals=>{:relacion=>@relacion}
+          page.visual_effect :highlight, 'relacion'+@relacion.id.to_s
+          page.hide 'indica_relacions'

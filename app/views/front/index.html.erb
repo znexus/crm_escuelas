@@ -1,0 +1,45 @@
+<h1>Página de inicio</h1>
+
+<h2>Tags</h2>
+
+  <% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
+    <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => css_class %>
+  <% end %>
+
+<style>
+  .css1 { font-size: 1.0em; }
+  .css2 { font-size: 1.2em; }
+  .css3 { font-size: 1.4em; }
+  .css4 { font-size: 1.6em; }
+</style>
+
+
+<h2>Reportes</h2>
+
+
+<h2>Última actividad</h2>
+<table>
+  <tr>
+    <th>Fecha</th>
+    <th>Por</th>
+    <th>Acción</th>
+    <th>Objeto</th>
+    <th>Versión</th>
+  </tr>
+  <% @actividades.each do |a| %>
+  <tr>
+    <td><%= l a.created_at, :format=>:short %></td>
+    <td><%= a.user %></td>
+    <td><%= a.action %></td>
+    <td>
+      <% unless a.action == "destroy" or a.auditable==nil  %>
+      <%= link_to(a.auditable, a.auditable) if ["Persona","Institucion","Familia"].include?(a.auditable_type) %>
+      <%= link_to(a.auditable.comentable, a.auditable.comentable) if ["Comentario"].include?(a.auditable_type) %>
+      <%= link_to(a.auditable.addressable, a.auditable.addressable) if ["Address"].include?(a.auditable_type) %>
+      <%= "Tag: " + a.auditable.to_s if ["Tag"].include?(a.auditable_type) %>
+      <% end %>
+    </td>
+    <td><%= a.version %></td>
+  </tr>
+  <% end %>
+</table>

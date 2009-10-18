@@ -1,0 +1,28 @@
+<% if addresses.size>0 %>
+<ol>
+<% for direccion in addresses %>
+  <li>
+      <%= link_to_remote h(direccion.single_line),
+ 				:update=>"addresses", 
+        :before    => "Element.show('spinner')",  
+        :complete  => "Element.hide('spinner'); new Effect.Highlight('addresses', {duration:0.7})",  
+				:url=>edit_address_path(direccion),
+				:method => :get %>
+
+      <%= link_to_remote image_tag('icons/delete.png', :alt=>'Eliminar'),
+ 				:update=>"addresses", 
+        :before    => "Element.show('spinner')",  
+        :complete  => "Element.hide('spinner'); new Effect.Highlight('addresses', {duration:0.7})",  
+				:url => direccion,
+				:method => :delete,
+				:confirm => 'Eliminaré definitivamente la dirección. ¿Estás seguro?' %>
+
+      <% if direccion.addressable_type.to_s == "Persona" %>
+        (de: <%= link_to direccion.addressable, direccion.addressable %>)
+      <% end %>
+  </li>
+<% end %>
+</ol>
+<% else %>
+Aún no tiene direcciones
+<% end %>

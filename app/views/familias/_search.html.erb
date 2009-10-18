@@ -1,0 +1,13 @@
+<p>Resultados:</p>
+<% unless @familias.blank? %>
+<table>
+<% for familia in @familias %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= link_to familia, familia %></td>
+  </tr>
+<% end %>
+</table>
+<% else %>
+<p>Ninguno.</p>
+<% end %>
+

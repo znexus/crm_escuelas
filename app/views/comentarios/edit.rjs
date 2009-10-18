@@ -1,0 +1,5 @@
+page.replace_html "comentario_form_#{@objeto.id}",
+      :partial=>"comentario_form", :locals=>{:objeto=>@objeto, :comentario=>@comentario}
+
+page.visual_effect :highlight, "lista_comentarios_#{@objeto.id}"
+

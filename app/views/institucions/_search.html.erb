@@ -1,0 +1,13 @@
+<p>Resultados:</p>
+<% unless @institucions.blank? %>
+<table>
+<% for institucion in @institucions %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= link_to institucion, institucion %></td>
+  </tr>
+<% end %>
+</table>
+<% else %>
+<p>Ninguno.</p>
+<% end %>
+

@@ -1,0 +1,89 @@
+
+<h1>Personas </h1>
+
+<div class="f">
+<% form_for(@persona) do |f| %>
+
+ <fieldset>
+   
+  <%= f.error_messages %>
+  
+  <% if @persona.new_record? %>
+      <legend>Nueva persona</legend>
+  <% else %>
+      <legend>Modificando a <%= @persona.nombre_completo %></legend>
+  <% end %>
+
+    <%= f.label :titulo_id%>
+    <%= f.collection_select(:titulo_id, @titulos, :id, :nombre, :prompt => "Seleccionar título" )%><br />
+
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %><br />
+
+    <%= f.hidden_field :familia_id %>
+
+    <%= f.label :familia %>
+    <%= text_field_tag  :relacion_familia, (@persona.familia if @persona.familia_id), :style=>"width:300px" %>
+    <%= image_tag('dots-white.gif',:id=>"busca_spinner",:style=>"display:none") %>
+    <div id="familia_search" class="auto_complete"></div>
+    <%= auto_complete_field :relacion_familia, :update=>"familia_search",
+				    :url=>{:action=>"relacion_search",:controller=>"familias"},
+				    :indicator => "busca_spinner",
+            :after_update_element => "function(element,value){ $('persona_familia_id').value = value.id.split('_').last()}"
+    %><br />
+
+    <%= f.label :apepat, "Ap. paterno" %>
+    <%= f.text_field :apepat %><br />
+
+    <%= f.label :apemat, "Ap. materno" %>
+    <%= f.text_field :apemat %><br />
+
+    <%= f.label :email, "Email" %>
+    <%= f.text_field :email %><br />
+
+    <%= f.label :sexo %>
+    <%= f.select :sexo,
+                 Persona::SEXO_TYPES,
+                 :prompt => "Seleccionar el sexo"  %><br />
+
+    <%= f.label :nacimiento, "Fecha nac." %>  
+
+ <%= calendar_box :persona, :nacimiento,
+       { :class => 'date',
+         :field_title => 'Fecha de nacimiento',
+         :button_title => 'Mostrar calendario'},
+       { :firstDay => 1,
+         :range => [Time.now.year - 90, Time.now.year ],
+         :step => 1,
+         :showOthers => true,
+         :cache => true }
+ %> <br />
+
+
+    <%= f.label :asistcard, "Asist Card" %>
+    <%= f.check_box :asistcard %><br />
+
+    <%= f.label :etiquetas, "Etiquetas" %>
+    <%= f.check_box :etiquetas %><br />
+      
+      <%= f.label :tags, "Tags(separados por comas):" %> 
+      <%= f.text_field :tag_list, :size=>60 %>
+      <%= image_tag('dots-white.gif',:id=>"spinner",:style=>"display:none") %>
+      <div id="tags" class="auto_complete"></div>
+      <%= auto_complete_field :persona_tag_list, :update=>"tags",
+    					:url=>{:action=>"find",:controller=>"tags"},
+    					:tokens => ",",
+    					:indicator => "spinner" %>
+       <br />
+
+    <%= f.submit "Registrar" %>
+    
+  </fieldset>
+  
+<% end %>
+</div>
+
+<p>
+<%= link_to('Ver Ficha de ' + @persona.nombre_completo, @persona) unless @persona.new_record? %>
+<%= link_to image_tag('icons/arrow_redo.png')+' Cancelar', personas_path %>  
+</p>

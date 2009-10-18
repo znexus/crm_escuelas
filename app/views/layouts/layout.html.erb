@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= controller.action_name %></title>
+  <%= stylesheet_link_tag "main.css" %>
+  <%= javascript_include_tag :defaults, :cache => "cache/all" %>
+  <%= dhtml_calendar_includes("blue", "es") %>
+</head>
+<body>
+<div id="warp">
+  <div id="arriba">
+    <div id="cabecera">
+      <%= render :partial => "partials/menu" -%>
+      <h1> <%= link_to "Escuelas Unidas", :root %>, atención al cliente</h1>
+      <% if logged_in? -%>
+        <%= tabnav :main -%>
+      <% end -%>
+    </div>
+  </div>
+  <div id="center">
+    <div id="herramientas">
+    <% if logged_in? -%>
+    <h4>Atajos</h4>
+      <p><%= link_to image_tag('icons/add.png')+'Agregar persona', new_persona_path, :class=>"creador" %></p>
+      <p><%= link_to image_tag('icons/add.png')+'Agregar familia', new_familia_path %></p>
+      <p><%= link_to image_tag('icons/add.png')+'Agregar institución', new_institucion_path %></p>
+      <p><%= link_to image_tag('icons/page_excel.png')+"Todas las personas(demora 2 minutos)", :action=>"todas_personas", :controller=> "front" %></p>
+    <h4>Fichas vistas</h4>
+      <% if session[:persona] %>
+        <% session[:persona].each do |p| %>
+          <p>P: <%= link_to(Persona.find(p), Persona.find(p)) if Persona.exists?(p) %></p>
+        <% end %>
+      <% end %>
+      <% if session[:familia] %>
+        <% session[:familia].each do |p| %>
+          <p>F: <%= link_to(Familia.find(p), Familia.find(p)) if Familia.exists?(p) %></p>
+        <% end %>
+      <% end %>
+      <% if session[:institucion] %>
+        <% session[:institucion].each do |p| %>
+          <p>I: <%= link_to(Institucion.find(p), Institucion.find(p)) if Institucion.exists?(p) %></p>
+        <% end %>
+      <% end %>
+    <% end -%>
+    </div>
+
+    <div id="central">
+      <div id="mensajes">
+        <span style="color: green"><%= flash[:notice] %></span>
+        <span style="color: red"><%= flash[:error] %></span>
+      </div>
+    	<%= yield  %>    
+    </div>
+
+    <div class="borrado"></div>
+  </div>
+  <div id="footer">
+    
+  </div>
+</div>
+</body>
+</html>

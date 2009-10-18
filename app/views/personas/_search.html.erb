@@ -1,0 +1,13 @@
+<p>Resultados: </p>
+<% unless @personas.blank? %>
+<table>
+<% for persona in @personas %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= link_to persona.nombre_completo, persona %></td>
+  </tr>
+<% end %>
+</table>
+<% else %>
+<p>Ninguno.</p>
+<% end %>
+

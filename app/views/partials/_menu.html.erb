@@ -1,0 +1,11 @@
+  <div id="menu_session">
+      <% if logged_in? -%>
+       Bienvenid@ <%= current_user %>
+        <%= link_to 'Usuarios', users_path  %>
+        <%= link_to 'Vínculos', tipo_vinculos_path  %>
+        <%= link_to 'Títulos', titulos_path  %>
+        <%= link_to 'Log out', session_path, :method => "delete"  %>
+      <% else -%>
+        <%= link_to 'Log in', new_session_path %>
+      <% end -%>
+  </div>

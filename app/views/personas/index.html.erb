@@ -1,0 +1,24 @@
+<h1>Personas </h1>
+
+<p><%= link_to image_tag('icons/add.png')+'Agregar persona', new_persona_path, :class=>"creador" %> </p>
+
+<p>
+<% form_tag('javascript:void(0)', {:method=> 'filter'}) do %>
+<h4><%=image_tag('icons/zoom.png')%> Busque personas ingresando parte del nombre o apellido:</h4>
+  <%= text_field_tag :search, @search, :class => "buscar", :size=>"40", :autocomplete=>"off" %>
+
+  <%= image_tag 'dots-white.gif', :style => "display:none", :id=>"spinner" %>
+
+  <%= observe_field :search,                      
+                    :frequency => 0.7,            
+                    :update    => 'ajaxWrapper', 
+                    :before    => "Element.show('spinner')",  
+                    :complete  => "Element.hide('spinner')",  
+                    :url       => {:action=>'search', :only_path => false},  
+                    :with      => "'search=' + encodeURIComponent(value)" %> 
+<% end %>
+</p>
+
+<div id='ajaxWrapper'>
+  <%= render :partial=>"search" %>
+</div>

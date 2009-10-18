@@ -1,0 +1,29 @@
+<h1>Tag: <%=@tag%></h1>
+<h2>Encontré <%=@personas.size%> personas</h2>
+<ul>
+<% @personas.each do |obj| %>
+  <li><%= link_to obj,obj %><%= render(:partial=>"listas/listar", :locals=>{:objeto=>obj}) %></li>
+<% end %>
+</ul>
+
+<h2>Encontré <%=@familias.size%> familias</h2>
+<ul>
+<% @familias.each do |obj| %>
+  <li><%= link_to obj,obj %><%= render(:partial=>"listas/listar", :locals=>{:objeto=>obj}) %></li>
+<% end %>
+</ul>
+
+<h2>Encontré <%=@instituciones.size%> instituciones</h2>
+<ul>
+<% @instituciones.each do |obj| %>
+  <li><%= link_to obj,obj %></li>
+<% end %>
+</ul>
+
+<h2>Encontré <%=@comentarios.size%> comentarios</h2>
+<ul>
+<% @comentarios.each do |obj| %>
+  <%= render :partial=>"comentarios/comentario", :locals=>{:comentario=>obj} %>
+  <span><%= link_to obj.comentable,obj.comentable %></span>
+<% end %>
+</ul>

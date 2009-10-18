@@ -1,0 +1,23 @@
+<h1>Familias</h1>
+
+<p><%= link_to image_tag('icons/add.png')+'Agregar familia', new_familia_path %></p>
+
+<p>
+<% form_tag('javascript:void(0)', {:method=> 'filter'}) do %>
+<h4><%=image_tag('icons/zoom.png')%> Busque familias por apellidos de los padres:</h4>
+  <%= text_field_tag :search, @search, :class => "buscar", :size=>"40", :autocomplete=>"off" %>
+  <%= image_tag 'dots-white.gif', :style => "display:none", :id=>"spinner" %>
+
+  <%= observe_field :search,                      
+                    :frequency => 0.7,            
+                    :update    => 'ajaxWrapper', 
+                    :before    => "Element.show('spinner')",  
+                    :complete  => "Element.hide('spinner')",  
+                    :url       => {:action=>'search', :only_path => false},  
+                    :with      => "'search=' + encodeURIComponent(value)" %> 
+<% end %>
+</p>
+
+<div id='ajaxWrapper'>
+  <%= render :partial=>"search" %>
+</div>

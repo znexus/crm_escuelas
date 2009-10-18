@@ -1,0 +1,11 @@
+<%
+    #creo la versión texto
+    require 'htmlentities'
+    coder = HTMLEntities.new
+    #quito los tags y decodifico
+    texto = coder.decode strip_tags(@texto)
+%>
+<%= texto %>
+<% @images.each do |i| %>
+<%=  i %>
+<% end %>

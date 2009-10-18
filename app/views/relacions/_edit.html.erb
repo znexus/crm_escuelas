@@ -1,0 +1,86 @@
+<div class="f">
+
+  <% remote_form_for(@relacion, :before  => "Element.show('indica_relacions')" )  do |f| %>
+
+  <fieldset>
+
+  <% if @relacion.new_record? %>
+      <legend>Nueva relación</legend>
+  <% else %>
+      <legend>Modificando relación</legend>
+  <% end %>
+  
+  <%= f.error_messages %>
+    <%= f.hidden_field :persona_id %>
+    <%= f.hidden_field :institucion_id %>
+
+  <p>Institución:
+  <%= text_field_tag  :relacion_institucion, (@relacion.institucion.nombre if @relacion.institucion_id) %>
+  <%= image_tag('dots-white.gif',:id=>"busca_spinner",:style=>"display:none") %>
+  <div id="relacion_search_<%= @relacion.id %>" class="auto_complete"></div>
+  <%= auto_complete_field :relacion_institucion, :update=>"relacion_search_"+@relacion.id.to_s,
+					:url=>{:action=>"relacion_search",:controller=>"institucions"},
+					:indicator => "busca_spinner",
+          :after_update_element => "function(element,value){ $('relacion_institucion_id').value = value.id.split('_').last()}"
+	%>
+  </p>
+
+
+  <p>Persona:
+  <%= text_field_tag  :relacion_persona, (@relacion.persona.to_s if @relacion.persona_id) %>
+  <%= image_tag('dots-white.gif',:id=>"busca_spinner2",:style=>"display:none") %>
+  <div id="relacion_search2_<%= @relacion.id %>" class="auto_complete"></div>
+  <%= auto_complete_field :relacion_persona, :update=>"relacion_search2_"+@relacion.id.to_s,
+					:url=>{:action=>"relacion_search",:controller=>"personas"},
+					:indicator => "busca_spinner2",
+          :after_update_element => "function(element,value){ $('relacion_persona_id').value = value.id.split('_').last()}"
+	%>
+  </p>
+
+
+    <%= f.hidden_field :institucion_id %>
+
+    <%= f.label :tipo_vinculo_id %>
+    
+    <% tipo = "%%"
+       unless @relacion.institucion_id.blank?
+         tipo = @relacion.institucion.tipo
+       end  %>
+
+    <%= f.collection_select(:tipo_vinculo_id, 
+                 TipoVinculo.find(:all,:order=>"tipo, nombre", :conditions=>["tipo like ?",tipo]), 
+								 :id, :to_s, :prompt => "-Seleccionar Tipo de relación-" )
+    %><br />
+
+    <%= f.label :nombre, "Cargo o descripción" %>
+    <%= f.text_field :nombre %><br />
+
+    <%= f.label :year %>
+    <%= f.text_field :year %><br />
+
+    <%= f.label :gradoseccion %>
+    <%= f.text_field :gradoseccion %><br />
+
+    <%= f.label :email %>
+    <%= f.text_field :email %><br />
+
+    <%= f.label :telefono %>
+    <%= f.text_field :telefono %><br />
+
+    <%= f.submit "Registrar" %>
+
+<% if @relacion.new_record? %>  
+    <%= link_to_function("Cancelar", "Element.hide('relacion')") %>
+<% else %>
+    <%= link_to_remote 'Cancelar',
+				:url =>  relacion_path(@relacion),
+		    :before => "Element.show('indica_relacions')",  
+				:method=>"get" %>
+<% end %>
+
+
+
+  </fieldset>
+
+<% end %>
+</div>

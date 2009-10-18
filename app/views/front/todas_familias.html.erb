@@ -1,0 +1,29 @@
+<h1>Personas en el sistema: <%= @cuenta %></h1>
+<%= will_paginate(@familias) %>
+
+<table width="100%" border="0" cellpadding="2">
+    <tr>
+        <th>Familia</th>
+        <th>Dirección Familia</th>
+        <th>Tags</th>
+        <th>Familiares</th>
+    </tr>
+<% for familia in @familias %>
+    <tr>
+        <td><%= familia %></td>
+        <td><%= familia.addresses.first if familia.addresses.size > 0 %></td>
+        <td><%= familia.tags %></td>
+        <td><%= familia.personas.size %> familiares
+          <ul>
+            <% for persona in familia.personas %>
+            <li><%= persona %></li>
+            <% end %>
+          </ul>
+        
+        </td>
+    </tr>
+<% end %>
+</table>
+
+
+

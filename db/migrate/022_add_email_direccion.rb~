@@ -1,0 +1,12 @@
+class AddEmailDireccion < ActiveRecord::Migration
+  def self.up
+    add_column :addresses, :etiquetas, :boolean
+    add_column :addresses, :asistcard, :boolean
+  end
+
+  def self.down
+    remove_column :addresses, :etiquetas
+    remove_column :addresses, :asistcard
+  end
+  
+end

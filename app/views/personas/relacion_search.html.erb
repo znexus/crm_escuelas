@@ -1,0 +1,5 @@
+<ul class="autocomplete_list">
+  <% @personas.each do |persona| %>
+  <li class="autocomplete_item" id="em_<%= persona.id %>"><%= persona.to_s %></li>
+  <% end %>
+</ul>

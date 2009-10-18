@@ -1,0 +1,2 @@
+<label for="address_region"><%= regions.first.tipo if regions.first %></label>
+<%= collection_select(:address, :region_id, regions, :id, :name, {:prompt => "Seleccione:"})%>

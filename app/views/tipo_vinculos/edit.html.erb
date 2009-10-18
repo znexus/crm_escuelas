@@ -1,0 +1,30 @@
+<h1>Tipo de Vínculo</h1>
+
+<%= link_to 'Show', @tipo_vinculo unless @tipo_vinculo.new_record?  %>
+<%= link_to 'Back', tipo_vinculos_path %>
+<div class="f">
+<% form_for(@tipo_vinculo) do |f| %>
+
+ <fieldset>
+   
+  <%= f.error_messages %>
+  
+  <% if @tipo_vinculo.new_record? %>
+      <legend>Nuevo tipo de vínculo</legend>
+  <% else %>
+      <legend>Modificando a <%= @tipo_vinculo.nombre %></legend>
+  <% end %>
+
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %><br />
+
+    <%= f.label :tipo %>
+    <%= f.select :tipo,
+                 TipoVinculo::TIPOS,
+                 :prompt => "Seleccionar:"  %><br />
+
+    <%= f.submit "Registrar" %>
+
+<% end %>
+
+</div>

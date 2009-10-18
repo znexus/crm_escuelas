@@ -1,0 +1,1969 @@
+--- 
+country_00038: 
+  name: Cameroon
+  official_name: Republic of Cameroon
+  numeric_code: 120
+  common_name: ""
+  id: 38
+  alpha_3_code: CMR
+  alpha_2_code: CM
+country_00064: 
+  name: Egypt
+  official_name: Arab Republic of Egypt
+  numeric_code: 818
+  common_name: ""
+  id: 64
+  alpha_3_code: EGY
+  alpha_2_code: EG
+country_00091: 
+  name: Guinea
+  official_name: Republic of Guinea
+  numeric_code: 324
+  common_name: ""
+  id: 91
+  alpha_3_code: GIN
+  alpha_2_code: GN
+country_00119: 
+  name: Kyrgyzstan
+  official_name: Kyrgyz Republic
+  numeric_code: 417
+  common_name: ""
+  id: 119
+  alpha_3_code: KGZ
+  alpha_2_code: KG
+country_00145: 
+  name: Monaco
+  official_name: Principality of Monaco
+  numeric_code: 492
+  common_name: ""
+  id: 145
+  alpha_3_code: MCO
+  alpha_2_code: MC
+country_00171: 
+  name: Papua New Guinea
+  official_name: ""
+  numeric_code: 598
+  common_name: ""
+  id: 171
+  alpha_3_code: PNG
+  alpha_2_code: PG
+country_00226: 
+  name: Turkmenistan
+  official_name: ""
+  numeric_code: 795
+  common_name: ""
+  id: 226
+  alpha_3_code: TKM
+  alpha_2_code: TM
+country_00039: 
+  name: Canada
+  official_name: ""
+  numeric_code: 124
+  common_name: ""
+  id: 39
+  alpha_3_code: CAN
+  alpha_2_code: CA
+country_00065: 
+  name: El Salvador
+  official_name: Republic of El Salvador
+  numeric_code: 222
+  common_name: ""
+  id: 65
+  alpha_3_code: SLV
+  alpha_2_code: SV
+country_00146: 
+  name: Mongolia
+  official_name: ""
+  numeric_code: 496
+  common_name: ""
+  id: 146
+  alpha_3_code: MNG
+  alpha_2_code: MN
+country_00172: 
+  name: Paraguay
+  official_name: Republic of Paraguay
+  numeric_code: 600
+  common_name: ""
+  id: 172
+  alpha_3_code: PRY
+  alpha_2_code: PY
+country_00227: 
+  name: Turks and Caicos Islands
+  official_name: ""
+  numeric_code: 796
+  common_name: ""
+  id: 227
+  alpha_3_code: TCA
+  alpha_2_code: TC
+country_00066: 
+  name: Equatorial Guinea
+  official_name: Republic of Equatorial Guinea
+  numeric_code: 226
+  common_name: ""
+  id: 66
+  alpha_3_code: GNQ
+  alpha_2_code: GQ
+country_00092: 
+  name: Guinea-Bissau
+  official_name: Republic of Guinea-Bissau
+  numeric_code: 624
+  common_name: ""
+  id: 92
+  alpha_3_code: GNB
+  alpha_2_code: GW
+country_00147: 
+  name: Montenegro
+  official_name: Montenegro
+  numeric_code: 499
+  common_name: ""
+  id: 147
+  alpha_3_code: MNE
+  alpha_2_code: ME
+country_00173: 
+  name: Peru
+  official_name: Republic of Peru
+  numeric_code: 604
+  common_name: ""
+  id: 173
+  alpha_3_code: PER
+  alpha_2_code: PE
+country_00228: 
+  name: Tuvalu
+  official_name: ""
+  numeric_code: 798
+  common_name: ""
+  id: 228
+  alpha_3_code: TUV
+  alpha_2_code: TV
+country_00067: 
+  name: Eritrea
+  official_name: ""
+  numeric_code: 232
+  common_name: ""
+  id: 67
+  alpha_3_code: ERI
+  alpha_2_code: ER
+country_00093: 
+  name: Guyana
+  official_name: Republic of Guyana
+  numeric_code: 328
+  common_name: ""
+  id: 93
+  alpha_3_code: GUY
+  alpha_2_code: GY
+country_00148: 
+  name: Montserrat
+  official_name: ""
+  numeric_code: 500
+  common_name: ""
+  id: 148
+  alpha_3_code: MSR
+  alpha_2_code: MS
+country_00174: 
+  name: Philippines
+  official_name: Republic of the Philippines
+  numeric_code: 608
+  common_name: ""
+  id: 174
+  alpha_3_code: PHL
+  alpha_2_code: PH
+country_00229: 
+  name: Uganda
+  official_name: Republic of Uganda
+  numeric_code: 800
+  common_name: ""
+  id: 229
+  alpha_3_code: UGA
+  alpha_2_code: UG
+country_00068: 
+  name: Estonia
+  official_name: Republic of Estonia
+  numeric_code: 233
+  common_name: ""
+  id: 68
+  alpha_3_code: EST
+  alpha_2_code: EE
+country_00094: 
+  name: Haiti
+  official_name: Republic of Haiti
+  numeric_code: 332
+  common_name: ""
+  id: 94
+  alpha_3_code: HTI
+  alpha_2_code: HT
+country_00149: 
+  name: Morocco
+  official_name: Kingdom of Morocco
+  numeric_code: 504
+  common_name: ""
+  id: 149
+  alpha_3_code: MAR
+  alpha_2_code: MA
+country_00175: 
+  name: Pitcairn
+  official_name: ""
+  numeric_code: 612
+  common_name: ""
+  id: 175
+  alpha_3_code: PCN
+  alpha_2_code: PN
+country_00069: 
+  name: Ethiopia
+  official_name: Federal Democratic Republic of Ethiopia
+  numeric_code: 231
+  common_name: ""
+  id: 69
+  alpha_3_code: ETH
+  alpha_2_code: ET
+country_00095: 
+  name: Heard Island and McDonald Islands
+  official_name: ""
+  numeric_code: 334
+  common_name: ""
+  id: 95
+  alpha_3_code: HMD
+  alpha_2_code: HM
+country_00176: 
+  name: Poland
+  official_name: Republic of Poland
+  numeric_code: 616
+  common_name: ""
+  id: 176
+  alpha_3_code: POL
+  alpha_2_code: PL
+country_00096: 
+  name: Holy See (Vatican City State)
+  official_name: ""
+  numeric_code: 336
+  common_name: ""
+  id: 96
+  alpha_3_code: VAT
+  alpha_2_code: VA
+country_00177: 
+  name: Portugal
+  official_name: Portuguese Republic
+  numeric_code: 620
+  common_name: ""
+  id: 177
+  alpha_3_code: PRT
+  alpha_2_code: PT
+country_00097: 
+  name: Honduras
+  official_name: Republic of Honduras
+  numeric_code: 340
+  common_name: ""
+  id: 97
+  alpha_3_code: HND
+  alpha_2_code: HN
+country_00178: 
+  name: Puerto Rico
+  official_name: ""
+  numeric_code: 630
+  common_name: ""
+  id: 178
+  alpha_3_code: PRI
+  alpha_2_code: PR
+country_00098: 
+  name: Hong Kong
+  official_name: Hong Kong Special Administrative Region of China
+  numeric_code: 344
+  common_name: ""
+  id: 98
+  alpha_3_code: HKG
+  alpha_2_code: HK
+country_00179: 
+  name: Qatar
+  official_name: State of Qatar
+  numeric_code: 634
+  common_name: ""
+  id: 179
+  alpha_3_code: QAT
+  alpha_2_code: QA
+country_00099: 
+  name: Hungary
+  official_name: Republic of Hungary
+  numeric_code: 348
+  common_name: ""
+  id: 99
+  alpha_3_code: HUN
+  alpha_2_code: HU
+country_00100: 
+  name: Iceland
+  official_name: Republic of Iceland
+  numeric_code: 352
+  common_name: ""
+  id: 100
+  alpha_3_code: ISL
+  alpha_2_code: IS
+country_00020: 
+  name: Barbados
+  official_name: ""
+  numeric_code: 52
+  common_name: ""
+  id: 20
+  alpha_3_code: BRB
+  alpha_2_code: BB
+country_00101: 
+  name: India
+  official_name: Republic of India
+  numeric_code: 356
+  common_name: ""
+  id: 101
+  alpha_3_code: IND
+  alpha_2_code: IN
+country_00021: 
+  name: Belarus
+  official_name: Republic of Belarus
+  numeric_code: 112
+  common_name: ""
+  id: 21
+  alpha_3_code: BLR
+  alpha_2_code: BY
+country_00102: 
+  name: Indonesia
+  official_name: Republic of Indonesia
+  numeric_code: 360
+  common_name: ""
+  id: 102
+  alpha_3_code: IDN
+  alpha_2_code: ID
+country_00022: 
+  name: Belgium
+  official_name: Kingdom of Belgium
+  numeric_code: 56
+  common_name: ""
+  id: 22
+  alpha_3_code: BEL
+  alpha_2_code: BE
+country_00103: 
+  name: Iran, Islamic Republic of
+  official_name: Islamic Republic of Iran
+  numeric_code: 364
+  common_name: ""
+  id: 103
+  alpha_3_code: IRN
+  alpha_2_code: IR
+country_00210: 
+  name: Svalbard and Jan Mayen
+  official_name: ""
+  numeric_code: 744
+  common_name: ""
+  id: 210
+  alpha_3_code: SJM
+  alpha_2_code: SJ
+country_00104: 
+  name: Iraq
+  official_name: Republic of Iraq
+  numeric_code: 368
+  common_name: ""
+  id: 104
+  alpha_3_code: IRQ
+  alpha_2_code: IQ
+country_00130: 
+  name: Macedonia, Republic of
+  official_name: The Former Yugoslav Republic of Macedonia
+  numeric_code: 807
+  common_name: ""
+  id: 130
+  alpha_3_code: MKD
+  alpha_2_code: MK
+country_00211: 
+  name: Swaziland
+  official_name: Kingdom of Swaziland
+  numeric_code: 748
+  common_name: ""
+  id: 211
+  alpha_3_code: SWZ
+  alpha_2_code: SZ
+country_00023: 
+  name: Belize
+  official_name: ""
+  numeric_code: 84
+  common_name: ""
+  id: 23
+  alpha_3_code: BLZ
+  alpha_2_code: BZ
+country_00050: 
+  name: Congo
+  official_name: Republic of the Congo
+  numeric_code: 178
+  common_name: ""
+  id: 50
+  alpha_3_code: COG
+  alpha_2_code: CG
+country_00105: 
+  name: Ireland
+  official_name: ""
+  numeric_code: 372
+  common_name: ""
+  id: 105
+  alpha_3_code: IRL
+  alpha_2_code: IE
+country_00131: 
+  name: Madagascar
+  official_name: Republic of Madagascar
+  numeric_code: 450
+  common_name: ""
+  id: 131
+  alpha_3_code: MDG
+  alpha_2_code: MG
+country_00212: 
+  name: Sweden
+  official_name: Kingdom of Sweden
+  numeric_code: 752
+  common_name: ""
+  id: 212
+  alpha_3_code: SWE
+  alpha_2_code: SE
+country_00024: 
+  name: Benin
+  official_name: Republic of Benin
+  numeric_code: 204
+  common_name: ""
+  id: 24
+  alpha_3_code: BEN
+  alpha_2_code: BJ
+country_00106: 
+  name: Isle of Man
+  official_name: ""
+  numeric_code: 833
+  common_name: ""
+  id: 106
+  alpha_3_code: IMN
+  alpha_2_code: IM
+country_00132: 
+  name: Malawi
+  official_name: Republic of Malawi
+  numeric_code: 454
+  common_name: ""
+  id: 132
+  alpha_3_code: MWI
+  alpha_2_code: MW
+country_00213: 
+  name: Switzerland
+  official_name: Swiss Confederation
+  numeric_code: 756
+  common_name: ""
+  id: 213
+  alpha_3_code: CHE
+  alpha_2_code: CH
+country_00025: 
+  name: Bermuda
+  official_name: ""
+  numeric_code: 60
+  common_name: ""
+  id: 25
+  alpha_3_code: BMU
+  alpha_2_code: BM
+country_00051: 
+  name: Congo, The Democratic Republic of the
+  official_name: ""
+  numeric_code: 180
+  common_name: ""
+  id: 51
+  alpha_3_code: COD
+  alpha_2_code: CD
+country_00107: 
+  name: Israel
+  official_name: State of Israel
+  numeric_code: 376
+  common_name: ""
+  id: 107
+  alpha_3_code: ISR
+  alpha_2_code: IL
+country_00133: 
+  name: Malaysia
+  official_name: ""
+  numeric_code: 458
+  common_name: ""
+  id: 133
+  alpha_3_code: MYS
+  alpha_2_code: MY
+country_00214: 
+  name: Syrian Arab Republic
+  official_name: ""
+  numeric_code: 760
+  common_name: ""
+  id: 214
+  alpha_3_code: SYR
+  alpha_2_code: SY
+country_00240: 
+  name: Virgin Islands, British
+  official_name: British Virgin Islands
+  numeric_code: 92
+  common_name: ""
+  id: 240
+  alpha_3_code: VGB
+  alpha_2_code: VG
+country_00026: 
+  name: Bhutan
+  official_name: Kingdom of Bhutan
+  numeric_code: 64
+  common_name: ""
+  id: 26
+  alpha_3_code: BTN
+  alpha_2_code: BT
+country_00052: 
+  name: Cook Islands
+  official_name: ""
+  numeric_code: 184
+  common_name: ""
+  id: 52
+  alpha_3_code: COK
+  alpha_2_code: CK
+country_00108: 
+  name: Italy
+  official_name: Italian Republic
+  numeric_code: 380
+  common_name: ""
+  id: 108
+  alpha_3_code: ITA
+  alpha_2_code: IT
+country_00134: 
+  name: Maldives
+  official_name: Republic of Maldives
+  numeric_code: 462
+  common_name: ""
+  id: 134
+  alpha_3_code: MDV
+  alpha_2_code: MV
+country_00160: 
+  name: Niger
+  official_name: Republic of the Niger
+  numeric_code: 562
+  common_name: ""
+  id: 160
+  alpha_3_code: NER
+  alpha_2_code: NE
+country_00215: 
+  name: Taiwan, Province of China
+  official_name: Taiwan, Province of China
+  numeric_code: 158
+  common_name: Taiwan
+  id: 215
+  alpha_3_code: TWN
+  alpha_2_code: TW
+country_00241: 
+  name: Virgin Islands, U.S.
+  official_name: Virgin Islands of the United States
+  numeric_code: 850
+  common_name: ""
+  id: 241
+  alpha_3_code: VIR
+  alpha_2_code: VI
+country_00027: 
+  name: Bolivia
+  official_name: Republic of Bolivia
+  numeric_code: 68
+  common_name: ""
+  id: 27
+  alpha_3_code: BOL
+  alpha_2_code: BO
+country_00053: 
+  name: Costa Rica
+  official_name: Republic of Costa Rica
+  numeric_code: 188
+  common_name: ""
+  id: 53
+  alpha_3_code: CRI
+  alpha_2_code: CR
+country_00080: 
+  name: Georgia
+  official_name: ""
+  numeric_code: 268
+  common_name: ""
+  id: 80
+  alpha_3_code: GEO
+  alpha_2_code: GE
+country_00135: 
+  name: Mali
+  official_name: Republic of Mali
+  numeric_code: 466
+  common_name: ""
+  id: 135
+  alpha_3_code: MLI
+  alpha_2_code: ML
+country_00161: 
+  name: Nigeria
+  official_name: Federal Republic of Nigeria
+  numeric_code: 566
+  common_name: ""
+  id: 161
+  alpha_3_code: NGA
+  alpha_2_code: NG
+country_00216: 
+  name: Tajikistan
+  official_name: Republic of Tajikistan
+  numeric_code: 762
+  common_name: ""
+  id: 216
+  alpha_3_code: TJK
+  alpha_2_code: TJ
+country_00242: 
+  name: Wallis and Futuna
+  official_name: ""
+  numeric_code: 876
+  common_name: ""
+  id: 242
+  alpha_3_code: WLF
+  alpha_2_code: WF
+country_00028: 
+  name: Bosnia and Herzegovina
+  official_name: Republic of Bosnia and Herzegovina
+  numeric_code: 70
+  common_name: ""
+  id: 28
+  alpha_3_code: BIH
+  alpha_2_code: BA
+country_00054: 
+  name: "C\xC3\xB4te d'Ivoire"
+  official_name: "Republic of C\xC3\xB4te d'Ivoire"
+  numeric_code: 384
+  common_name: ""
+  id: 54
+  alpha_3_code: CIV
+  alpha_2_code: CI
+country_00109: 
+  name: Jamaica
+  official_name: ""
+  numeric_code: 388
+  common_name: ""
+  id: 109
+  alpha_3_code: JAM
+  alpha_2_code: JM
+country_00136: 
+  name: Malta
+  official_name: Republic of Malta
+  numeric_code: 470
+  common_name: ""
+  id: 136
+  alpha_3_code: MLT
+  alpha_2_code: MT
+country_00162: 
+  name: Niue
+  official_name: Republic of Niue
+  numeric_code: 570
+  common_name: ""
+  id: 162
+  alpha_3_code: NIU
+  alpha_2_code: NU
+country_00217: 
+  name: Tanzania, United Republic of
+  official_name: United Republic of Tanzania
+  numeric_code: 834
+  common_name: ""
+  id: 217
+  alpha_3_code: TZA
+  alpha_2_code: TZ
+country_00243: 
+  name: Western Sahara
+  official_name: ""
+  numeric_code: 732
+  common_name: ""
+  id: 243
+  alpha_3_code: ESH
+  alpha_2_code: EH
+country_00029: 
+  name: Botswana
+  official_name: Republic of Botswana
+  numeric_code: 72
+  common_name: ""
+  id: 29
+  alpha_3_code: BWA
+  alpha_2_code: BW
+country_00055: 
+  name: Croatia
+  official_name: Republic of Croatia
+  numeric_code: 191
+  common_name: ""
+  id: 55
+  alpha_3_code: HRV
+  alpha_2_code: HR
+country_00081: 
+  name: Germany
+  official_name: Federal Republic of Germany
+  numeric_code: 276
+  common_name: ""
+  id: 81
+  alpha_3_code: DEU
+  alpha_2_code: DE
+country_00163: 
+  name: Norfolk Island
+  official_name: ""
+  numeric_code: 574
+  common_name: ""
+  id: 163
+  alpha_3_code: NFK
+  alpha_2_code: NF
+country_00190: 
+  name: Saint Vincent and the Grenadines
+  official_name: ""
+  numeric_code: 670
+  common_name: ""
+  id: 190
+  alpha_3_code: VCT
+  alpha_2_code: VC
+country_00218: 
+  name: Thailand
+  official_name: Kingdom of Thailand
+  numeric_code: 764
+  common_name: ""
+  id: 218
+  alpha_3_code: THA
+  alpha_2_code: TH
+country_00244: 
+  name: Yemen
+  official_name: Republic of Yemen
+  numeric_code: 887
+  common_name: ""
+  id: 244
+  alpha_3_code: YEM
+  alpha_2_code: YE
+country_00056: 
+  name: Cuba
+  official_name: Republic of Cuba
+  numeric_code: 192
+  common_name: ""
+  id: 56
+  alpha_3_code: CUB
+  alpha_2_code: CU
+country_00082: 
+  name: Ghana
+  official_name: Republic of Ghana
+  numeric_code: 288
+  common_name: ""
+  id: 82
+  alpha_3_code: GHA
+  alpha_2_code: GH
+country_00137: 
+  name: Marshall Islands
+  official_name: Republic of the Marshall Islands
+  numeric_code: 584
+  common_name: ""
+  id: 137
+  alpha_3_code: MHL
+  alpha_2_code: MH
+country_00164: 
+  name: Northern Mariana Islands
+  official_name: Commonwealth of the Northern Mariana Islands
+  numeric_code: 580
+  common_name: ""
+  id: 164
+  alpha_3_code: MNP
+  alpha_2_code: MP
+country_00219: 
+  name: Timor-Leste
+  official_name: Democratic Republic of Timor-Leste
+  numeric_code: 626
+  common_name: ""
+  id: 219
+  alpha_3_code: TLS
+  alpha_2_code: TL
+country_00245: 
+  name: Zambia
+  official_name: Republic of Zambia
+  numeric_code: 894
+  common_name: ""
+  id: 245
+  alpha_3_code: ZMB
+  alpha_2_code: ZM
+country_00057: 
+  name: Cyprus
+  official_name: Republic of Cyprus
+  numeric_code: 196
+  common_name: ""
+  id: 57
+  alpha_3_code: CYP
+  alpha_2_code: CY
+country_00083: 
+  name: Gibraltar
+  official_name: ""
+  numeric_code: 292
+  common_name: ""
+  id: 83
+  alpha_3_code: GIB
+  alpha_2_code: GI
+country_00138: 
+  name: Martinique
+  official_name: ""
+  numeric_code: 474
+  common_name: ""
+  id: 138
+  alpha_3_code: MTQ
+  alpha_2_code: MQ
+country_00246: 
+  name: Zimbabwe
+  official_name: Republic of Zimbabwe
+  numeric_code: 716
+  common_name: ""
+  id: 246
+  alpha_3_code: ZWE
+  alpha_2_code: ZW
+country_00191: 
+  name: Samoa
+  official_name: Independent State of Samoa
+  numeric_code: 882
+  common_name: ""
+  id: 191
+  alpha_3_code: WSM
+  alpha_2_code: WS
+country_00058: 
+  name: Czech Republic
+  official_name: ""
+  numeric_code: 203
+  common_name: ""
+  id: 58
+  alpha_3_code: CZE
+  alpha_2_code: CZ
+country_00084: 
+  name: Greece
+  official_name: Hellenic Republic
+  numeric_code: 300
+  common_name: ""
+  id: 84
+  alpha_3_code: GRC
+  alpha_2_code: GR
+country_00139: 
+  name: Mauritania
+  official_name: Islamic Republic of Mauritania
+  numeric_code: 478
+  common_name: ""
+  id: 139
+  alpha_3_code: MRT
+  alpha_2_code: MR
+country_00165: 
+  name: Norway
+  official_name: Kingdom of Norway
+  numeric_code: 578
+  common_name: ""
+  id: 165
+  alpha_3_code: NOR
+  alpha_2_code: "NO"
+country_00192: 
+  name: San Marino
+  official_name: Republic of San Marino
+  numeric_code: 674
+  common_name: ""
+  id: 192
+  alpha_3_code: SMR
+  alpha_2_code: SM
+country_00059: 
+  name: Denmark
+  official_name: Kingdom of Denmark
+  numeric_code: 208
+  common_name: ""
+  id: 59
+  alpha_3_code: DNK
+  alpha_2_code: DK
+country_00085: 
+  name: Greenland
+  official_name: ""
+  numeric_code: 304
+  common_name: ""
+  id: 85
+  alpha_3_code: GRL
+  alpha_2_code: GL
+country_00166: 
+  name: Oman
+  official_name: Sultanate of Oman
+  numeric_code: 512
+  common_name: ""
+  id: 166
+  alpha_3_code: OMN
+  alpha_2_code: OM
+country_00086: 
+  name: Grenada
+  official_name: ""
+  numeric_code: 308
+  common_name: ""
+  id: 86
+  alpha_3_code: GRD
+  alpha_2_code: GD
+country_00167: 
+  name: Pakistan
+  official_name: Islamic Republic of Pakistan
+  numeric_code: 586
+  common_name: ""
+  id: 167
+  alpha_3_code: PAK
+  alpha_2_code: PK
+country_00193: 
+  name: Sao Tome and Principe
+  official_name: Democratic Republic of Sao Tome and Principe
+  numeric_code: 678
+  common_name: ""
+  id: 193
+  alpha_3_code: STP
+  alpha_2_code: ST
+country_00087: 
+  name: Guadeloupe
+  official_name: ""
+  numeric_code: 312
+  common_name: ""
+  id: 87
+  alpha_3_code: GLP
+  alpha_2_code: GP
+country_00168: 
+  name: Palau
+  official_name: Republic of Palau
+  numeric_code: 585
+  common_name: ""
+  id: 168
+  alpha_3_code: PLW
+  alpha_2_code: PW
+country_00194: 
+  name: Saudi Arabia
+  official_name: Kingdom of Saudi Arabia
+  numeric_code: 682
+  common_name: ""
+  id: 194
+  alpha_3_code: SAU
+  alpha_2_code: SA
+country_00088: 
+  name: Guam
+  official_name: ""
+  numeric_code: 316
+  common_name: ""
+  id: 88
+  alpha_3_code: GUM
+  alpha_2_code: GU
+country_00169: 
+  name: Palestinian Territory, Occupied
+  official_name: Occupied Palestinian Territory
+  numeric_code: 275
+  common_name: ""
+  id: 169
+  alpha_3_code: PSE
+  alpha_2_code: PS
+country_00195: 
+  name: Senegal
+  official_name: Republic of Senegal
+  numeric_code: 686
+  common_name: ""
+  id: 195
+  alpha_3_code: SEN
+  alpha_2_code: SN
+country_00089: 
+  name: Guatemala
+  official_name: Republic of Guatemala
+  numeric_code: 320
+  common_name: ""
+  id: 89
+  alpha_3_code: GTM
+  alpha_2_code: GT
+country_00196: 
+  name: Serbia
+  official_name: Republic of Serbia
+  numeric_code: 688
+  common_name: ""
+  id: 196
+  alpha_3_code: SRB
+  alpha_2_code: RS
+country_00197: 
+  name: Seychelles
+  official_name: Republic of Seychelles
+  numeric_code: 690
+  common_name: ""
+  id: 197
+  alpha_3_code: SYC
+  alpha_2_code: SC
+country_00198: 
+  name: Sierra Leone
+  official_name: Republic of Sierra Leone
+  numeric_code: 694
+  common_name: ""
+  id: 198
+  alpha_3_code: SLE
+  alpha_2_code: SL
+country_00199: 
+  name: Singapore
+  official_name: Republic of Singapore
+  numeric_code: 702
+  common_name: ""
+  id: 199
+  alpha_3_code: SGP
+  alpha_2_code: SG
+country_00010: 
+  name: Antigua and Barbuda
+  official_name: ""
+  numeric_code: 28
+  common_name: ""
+  id: 10
+  alpha_3_code: ATG
+  alpha_2_code: AG
+country_00011: 
+  name: Argentina
+  official_name: Argentine Republic
+  numeric_code: 32
+  common_name: ""
+  id: 11
+  alpha_3_code: ARG
+  alpha_2_code: AR
+country_00012: 
+  name: Armenia
+  official_name: Republic of Armenia
+  numeric_code: 51
+  common_name: ""
+  id: 12
+  alpha_3_code: ARM
+  alpha_2_code: AM
+country_00200: 
+  name: Slovakia
+  official_name: Slovak Republic
+  numeric_code: 703
+  common_name: ""
+  id: 200
+  alpha_3_code: SVK
+  alpha_2_code: SK
+country_00013: 
+  name: Aruba
+  official_name: ""
+  numeric_code: 533
+  common_name: ""
+  id: 13
+  alpha_3_code: ABW
+  alpha_2_code: AW
+country_00120: 
+  name: Lao People's Democratic Republic
+  official_name: ""
+  numeric_code: 418
+  common_name: ""
+  id: 120
+  alpha_3_code: LAO
+  alpha_2_code: LA
+country_00201: 
+  name: Slovenia
+  official_name: Republic of Slovenia
+  numeric_code: 705
+  common_name: ""
+  id: 201
+  alpha_3_code: SVN
+  alpha_2_code: SI
+country_00014: 
+  name: Australia
+  official_name: ""
+  numeric_code: 36
+  common_name: ""
+  id: 14
+  alpha_3_code: AUS
+  alpha_2_code: AU
+country_00040: 
+  name: Cape Verde
+  official_name: Republic of Cape Verde
+  numeric_code: 132
+  common_name: ""
+  id: 40
+  alpha_3_code: CPV
+  alpha_2_code: CV
+country_00121: 
+  name: Latvia
+  official_name: Republic of Latvia
+  numeric_code: 428
+  common_name: ""
+  id: 121
+  alpha_3_code: LVA
+  alpha_2_code: LV
+country_00202: 
+  name: Solomon Islands
+  official_name: ""
+  numeric_code: 90
+  common_name: ""
+  id: 202
+  alpha_3_code: SLB
+  alpha_2_code: SB
+country_00015: 
+  name: Austria
+  official_name: Republic of Austria
+  numeric_code: 40
+  common_name: ""
+  id: 15
+  alpha_3_code: AUT
+  alpha_2_code: AT
+country_00041: 
+  name: Cayman Islands
+  official_name: ""
+  numeric_code: 136
+  common_name: ""
+  id: 41
+  alpha_3_code: CYM
+  alpha_2_code: KY
+country_00122: 
+  name: Lebanon
+  official_name: Lebanese Republic
+  numeric_code: 422
+  common_name: ""
+  id: 122
+  alpha_3_code: LBN
+  alpha_2_code: LB
+country_00203: 
+  name: Somalia
+  official_name: Somali Republic
+  numeric_code: 706
+  common_name: ""
+  id: 203
+  alpha_3_code: SOM
+  alpha_2_code: SO
+country_00016: 
+  name: Azerbaijan
+  official_name: Republic of Azerbaijan
+  numeric_code: 31
+  common_name: ""
+  id: 16
+  alpha_3_code: AZE
+  alpha_2_code: AZ
+country_00042: 
+  name: Central African Republic
+  official_name: ""
+  numeric_code: 140
+  common_name: ""
+  id: 42
+  alpha_3_code: CAF
+  alpha_2_code: CF
+country_00123: 
+  name: Lesotho
+  official_name: Kingdom of Lesotho
+  numeric_code: 426
+  common_name: ""
+  id: 123
+  alpha_3_code: LSO
+  alpha_2_code: LS
+country_00204: 
+  name: South Africa
+  official_name: Republic of South Africa
+  numeric_code: 710
+  common_name: ""
+  id: 204
+  alpha_3_code: ZAF
+  alpha_2_code: ZA
+country_00230: 
+  name: Ukraine
+  official_name: ""
+  numeric_code: 804
+  common_name: ""
+  id: 230
+  alpha_3_code: UKR
+  alpha_2_code: UA
+country_00017: 
+  name: Bahamas
+  official_name: Commonwealth of the Bahamas
+  numeric_code: 44
+  common_name: ""
+  id: 17
+  alpha_3_code: BHS
+  alpha_2_code: BS
+country_00043: 
+  name: Chad
+  official_name: Republic of Chad
+  numeric_code: 148
+  common_name: ""
+  id: 43
+  alpha_3_code: TCD
+  alpha_2_code: TD
+country_00124: 
+  name: Liberia
+  official_name: Republic of Liberia
+  numeric_code: 430
+  common_name: ""
+  id: 124
+  alpha_3_code: LBR
+  alpha_2_code: LR
+country_00150: 
+  name: Mozambique
+  official_name: Republic of Mozambique
+  numeric_code: 508
+  common_name: ""
+  id: 150
+  alpha_3_code: MOZ
+  alpha_2_code: MZ
+country_00205: 
+  name: South Georgia and the South Sandwich Islands
+  official_name: ""
+  numeric_code: 239
+  common_name: ""
+  id: 205
+  alpha_3_code: SGS
+  alpha_2_code: GS
+country_00231: 
+  name: United Arab Emirates
+  official_name: ""
+  numeric_code: 784
+  common_name: ""
+  id: 231
+  alpha_3_code: ARE
+  alpha_2_code: AE
+country_00018: 
+  name: Bahrain
+  official_name: Kingdom of Bahrain
+  numeric_code: 48
+  common_name: ""
+  id: 18
+  alpha_3_code: BHR
+  alpha_2_code: BH
+country_00044: 
+  name: Chile
+  official_name: Republic of Chile
+  numeric_code: 152
+  common_name: ""
+  id: 44
+  alpha_3_code: CHL
+  alpha_2_code: CL
+country_00070: 
+  name: Falkland Islands (Malvinas)
+  official_name: ""
+  numeric_code: 238
+  common_name: ""
+  id: 70
+  alpha_3_code: FLK
+  alpha_2_code: FK
+country_00125: 
+  name: Libyan Arab Jamahiriya
+  official_name: Socialist People's Libyan Arab Jamahiriya
+  numeric_code: 434
+  common_name: ""
+  id: 125
+  alpha_3_code: LBY
+  alpha_2_code: LY
+country_00151: 
+  name: Myanmar
+  official_name: Union of Myanmar
+  numeric_code: 104
+  common_name: ""
+  id: 151
+  alpha_3_code: MMR
+  alpha_2_code: MM
+country_00206: 
+  name: Spain
+  official_name: Kingdom of Spain
+  numeric_code: 724
+  common_name: ""
+  id: 206
+  alpha_3_code: ESP
+  alpha_2_code: ES
+country_00232: 
+  name: United Kingdom
+  official_name: United Kingdom of Great Britain and Northern Ireland
+  numeric_code: 826
+  common_name: ""
+  id: 232
+  alpha_3_code: GBR
+  alpha_2_code: GB
+country_00019: 
+  name: Bangladesh
+  official_name: People's Republic of Bangladesh
+  numeric_code: 50
+  common_name: ""
+  id: 19
+  alpha_3_code: BGD
+  alpha_2_code: BD
+country_00045: 
+  name: China
+  official_name: People's Republic of China
+  numeric_code: 156
+  common_name: ""
+  id: 45
+  alpha_3_code: CHN
+  alpha_2_code: CN
+country_00071: 
+  name: Faroe Islands
+  official_name: ""
+  numeric_code: 234
+  common_name: ""
+  id: 71
+  alpha_3_code: FRO
+  alpha_2_code: FO
+country_00126: 
+  name: Liechtenstein
+  official_name: Principality of Liechtenstein
+  numeric_code: 438
+  common_name: ""
+  id: 126
+  alpha_3_code: LIE
+  alpha_2_code: LI
+country_00152: 
+  name: Namibia
+  official_name: Republic of Namibia
+  numeric_code: 516
+  common_name: ""
+  id: 152
+  alpha_3_code: NAM
+  alpha_2_code: NA
+country_00207: 
+  name: Sri Lanka
+  official_name: Democratic Socialist Republic of Sri Lanka
+  numeric_code: 144
+  common_name: ""
+  id: 207
+  alpha_3_code: LKA
+  alpha_2_code: LK
+country_00233: 
+  name: United States
+  official_name: United States of America
+  numeric_code: 840
+  common_name: ""
+  id: 233
+  alpha_3_code: USA
+  alpha_2_code: US
+country_00046: 
+  name: Christmas Island
+  official_name: ""
+  numeric_code: 162
+  common_name: ""
+  id: 46
+  alpha_3_code: CXR
+  alpha_2_code: CX
+country_00072: 
+  name: Fiji
+  official_name: Republic of the Fiji Islands
+  numeric_code: 242
+  common_name: ""
+  id: 72
+  alpha_3_code: FJI
+  alpha_2_code: FJ
+country_00127: 
+  name: Lithuania
+  official_name: Republic of Lithuania
+  numeric_code: 440
+  common_name: ""
+  id: 127
+  alpha_3_code: LTU
+  alpha_2_code: LT
+country_00153: 
+  name: Nauru
+  official_name: Republic of Nauru
+  numeric_code: 520
+  common_name: ""
+  id: 153
+  alpha_3_code: NRU
+  alpha_2_code: NR
+country_00208: 
+  name: Sudan
+  official_name: Republic of the Sudan
+  numeric_code: 736
+  common_name: ""
+  id: 208
+  alpha_3_code: SDN
+  alpha_2_code: SD
+country_00234: 
+  name: United States Minor Outlying Islands
+  official_name: ""
+  numeric_code: 581
+  common_name: ""
+  id: 234
+  alpha_3_code: UMI
+  alpha_2_code: UM
+country_00047: 
+  name: Cocos (Keeling) Islands
+  official_name: ""
+  numeric_code: 166
+  common_name: ""
+  id: 47
+  alpha_3_code: CCK
+  alpha_2_code: CC
+country_00073: 
+  name: Finland
+  official_name: Republic of Finland
+  numeric_code: 246
+  common_name: ""
+  id: 73
+  alpha_3_code: FIN
+  alpha_2_code: FI
+country_00128: 
+  name: Luxembourg
+  official_name: Grand Duchy of Luxembourg
+  numeric_code: 442
+  common_name: ""
+  id: 128
+  alpha_3_code: LUX
+  alpha_2_code: LU
+country_00154: 
+  name: Nepal
+  official_name: Kingdom of Nepal
+  numeric_code: 524
+  common_name: ""
+  id: 154
+  alpha_3_code: NPL
+  alpha_2_code: NP
+country_00180: 
+  name: Reunion
+  official_name: ""
+  numeric_code: 638
+  common_name: ""
+  id: 180
+  alpha_3_code: REU
+  alpha_2_code: RE
+country_00209: 
+  name: Suriname
+  official_name: Republic of Suriname
+  numeric_code: 740
+  common_name: ""
+  id: 209
+  alpha_3_code: SUR
+  alpha_2_code: SR
+country_00235: 
+  name: Uruguay
+  official_name: Eastern Republic of Uruguay
+  numeric_code: 858
+  common_name: ""
+  id: 235
+  alpha_3_code: URY
+  alpha_2_code: UY
+country_00048: 
+  name: Colombia
+  official_name: Republic of Colombia
+  numeric_code: 170
+  common_name: ""
+  id: 48
+  alpha_3_code: COL
+  alpha_2_code: CO
+country_00074: 
+  name: France
+  official_name: French Republic
+  numeric_code: 250
+  common_name: ""
+  id: 74
+  alpha_3_code: FRA
+  alpha_2_code: FR
+country_00129: 
+  name: Macao
+  official_name: Macao Special Administrative Region of China
+  numeric_code: 446
+  common_name: ""
+  id: 129
+  alpha_3_code: MAC
+  alpha_2_code: MO
+country_00155: 
+  name: Netherlands
+  official_name: Kingdom of the Netherlands
+  numeric_code: 528
+  common_name: ""
+  id: 155
+  alpha_3_code: NLD
+  alpha_2_code: NL
+country_00181: 
+  name: Romania
+  official_name: ""
+  numeric_code: 642
+  common_name: ""
+  id: 181
+  alpha_3_code: ROU
+  alpha_2_code: RO
+country_00236: 
+  name: Uzbekistan
+  official_name: Republic of Uzbekistan
+  numeric_code: 860
+  common_name: ""
+  id: 236
+  alpha_3_code: UZB
+  alpha_2_code: UZ
+country_00049: 
+  name: Comoros
+  official_name: Union of the Comoros
+  numeric_code: 174
+  common_name: ""
+  id: 49
+  alpha_3_code: COM
+  alpha_2_code: KM
+country_00075: 
+  name: French Guiana
+  official_name: ""
+  numeric_code: 254
+  common_name: ""
+  id: 75
+  alpha_3_code: GUF
+  alpha_2_code: GF
+country_00156: 
+  name: Netherlands Antilles
+  official_name: ""
+  numeric_code: 530
+  common_name: ""
+  id: 156
+  alpha_3_code: ANT
+  alpha_2_code: AN
+country_00182: 
+  name: Russian Federation
+  official_name: ""
+  numeric_code: 643
+  common_name: ""
+  id: 182
+  alpha_3_code: RUS
+  alpha_2_code: RU
+country_00237: 
+  name: Vanuatu
+  official_name: Republic of Vanuatu
+  numeric_code: 548
+  common_name: ""
+  id: 237
+  alpha_3_code: VUT
+  alpha_2_code: VU
+country_00076: 
+  name: French Polynesia
+  official_name: ""
+  numeric_code: 258
+  common_name: ""
+  id: 76
+  alpha_3_code: PYF
+  alpha_2_code: PF
+country_00157: 
+  name: New Caledonia
+  official_name: ""
+  numeric_code: 540
+  common_name: ""
+  id: 157
+  alpha_3_code: NCL
+  alpha_2_code: NC
+country_00183: 
+  name: Rwanda
+  official_name: Rwandese Republic
+  numeric_code: 646
+  common_name: ""
+  id: 183
+  alpha_3_code: RWA
+  alpha_2_code: RW
+country_00238: 
+  name: Venezuela
+  official_name: Bolivarian Republic of Venezuela
+  numeric_code: 862
+  common_name: ""
+  id: 238
+  alpha_3_code: VEN
+  alpha_2_code: VE
+country_00077: 
+  name: French Southern Territories
+  official_name: ""
+  numeric_code: 260
+  common_name: ""
+  id: 77
+  alpha_3_code: ATF
+  alpha_2_code: TF
+country_00158: 
+  name: New Zealand
+  official_name: ""
+  numeric_code: 554
+  common_name: ""
+  id: 158
+  alpha_3_code: NZL
+  alpha_2_code: NZ
+country_00184: 
+  name: "Saint Barth\xC3\xA9lemy"
+  official_name: ""
+  numeric_code: 652
+  common_name: ""
+  id: 184
+  alpha_3_code: BLM
+  alpha_2_code: BL
+country_00239: 
+  name: Viet Nam
+  official_name: Socialist Republic of Viet Nam
+  numeric_code: 704
+  common_name: ""
+  id: 239
+  alpha_3_code: VNM
+  alpha_2_code: VN
+country_00078: 
+  name: Gabon
+  official_name: Gabonese Republic
+  numeric_code: 266
+  common_name: ""
+  id: 78
+  alpha_3_code: GAB
+  alpha_2_code: GA
+country_00159: 
+  name: Nicaragua
+  official_name: Republic of Nicaragua
+  numeric_code: 558
+  common_name: ""
+  id: 159
+  alpha_3_code: NIC
+  alpha_2_code: NI
+country_00185: 
+  name: Saint Helena
+  official_name: ""
+  numeric_code: 654
+  common_name: ""
+  id: 185
+  alpha_3_code: SHN
+  alpha_2_code: SH
+country_00079: 
+  name: Gambia
+  official_name: Republic of the Gambia
+  numeric_code: 270
+  common_name: ""
+  id: 79
+  alpha_3_code: GMB
+  alpha_2_code: GM
+country_00186: 
+  name: Saint Kitts and Nevis
+  official_name: ""
+  numeric_code: 659
+  common_name: ""
+  id: 186
+  alpha_3_code: KNA
+  alpha_2_code: KN
+country_00187: 
+  name: Saint Lucia
+  official_name: ""
+  numeric_code: 662
+  common_name: ""
+  id: 187
+  alpha_3_code: LCA
+  alpha_2_code: LC
+country_00188: 
+  name: Saint Martin (French part)
+  official_name: ""
+  numeric_code: 663
+  common_name: ""
+  id: 188
+  alpha_3_code: MAF
+  alpha_2_code: MF
+country_00189: 
+  name: Saint Pierre and Miquelon
+  official_name: ""
+  numeric_code: 666
+  common_name: ""
+  id: 189
+  alpha_3_code: SPM
+  alpha_2_code: PM
+country_00001: 
+  name: Afghanistan
+  official_name: Islamic Republic of Afghanistan
+  numeric_code: 4
+  common_name: ""
+  id: 1
+  alpha_3_code: AFG
+  alpha_2_code: AF
+country_00002: 
+  name: "\xC3\x85land Islands"
+  official_name: ""
+  numeric_code: 248
+  common_name: ""
+  id: 2
+  alpha_3_code: ALA
+  alpha_2_code: AX
+country_00003: 
+  name: Albania
+  official_name: Republic of Albania
+  numeric_code: 8
+  common_name: ""
+  id: 3
+  alpha_3_code: ALB
+  alpha_2_code: AL
+country_00110: 
+  name: Japan
+  official_name: ""
+  numeric_code: 392
+  common_name: ""
+  id: 110
+  alpha_3_code: JPN
+  alpha_2_code: JP
+country_00004: 
+  name: Algeria
+  official_name: People's Democratic Republic of Algeria
+  numeric_code: 12
+  common_name: ""
+  id: 4
+  alpha_3_code: DZA
+  alpha_2_code: DZ
+country_00030: 
+  name: Bouvet Island
+  official_name: ""
+  numeric_code: 74
+  common_name: ""
+  id: 30
+  alpha_3_code: BVT
+  alpha_2_code: BV
+country_00111: 
+  name: Jersey
+  official_name: ""
+  numeric_code: 832
+  common_name: ""
+  id: 111
+  alpha_3_code: JEY
+  alpha_2_code: JE
+country_00005: 
+  name: American Samoa
+  official_name: ""
+  numeric_code: 16
+  common_name: ""
+  id: 5
+  alpha_3_code: ASM
+  alpha_2_code: AS
+country_00031: 
+  name: Brazil
+  official_name: Federative Republic of Brazil
+  numeric_code: 76
+  common_name: ""
+  id: 31
+  alpha_3_code: BRA
+  alpha_2_code: BR
+country_00112: 
+  name: Jordan
+  official_name: Hashemite Kingdom of Jordan
+  numeric_code: 400
+  common_name: ""
+  id: 112
+  alpha_3_code: JOR
+  alpha_2_code: JO
+country_00006: 
+  name: Andorra
+  official_name: Principality of Andorra
+  numeric_code: 20
+  common_name: ""
+  id: 6
+  alpha_3_code: AND
+  alpha_2_code: AD
+country_00032: 
+  name: British Indian Ocean Territory
+  official_name: ""
+  numeric_code: 86
+  common_name: ""
+  id: 32
+  alpha_3_code: IOT
+  alpha_2_code: IO
+country_00113: 
+  name: Kazakhstan
+  official_name: Republic of Kazakhstan
+  numeric_code: 398
+  common_name: ""
+  id: 113
+  alpha_3_code: KAZ
+  alpha_2_code: KZ
+country_00220: 
+  name: Togo
+  official_name: Togolese Republic
+  numeric_code: 768
+  common_name: ""
+  id: 220
+  alpha_3_code: TGO
+  alpha_2_code: TG
+country_00007: 
+  name: Angola
+  official_name: Republic of Angola
+  numeric_code: 24
+  common_name: ""
+  id: 7
+  alpha_3_code: AGO
+  alpha_2_code: AO
+country_00033: 
+  name: Brunei Darussalam
+  official_name: ""
+  numeric_code: 96
+  common_name: ""
+  id: 33
+  alpha_3_code: BRN
+  alpha_2_code: BN
+country_00114: 
+  name: Kenya
+  official_name: Republic of Kenya
+  numeric_code: 404
+  common_name: ""
+  id: 114
+  alpha_3_code: KEN
+  alpha_2_code: KE
+country_00140: 
+  name: Mauritius
+  official_name: Republic of Mauritius
+  numeric_code: 480
+  common_name: ""
+  id: 140
+  alpha_3_code: MUS
+  alpha_2_code: MU
+country_00221: 
+  name: Tokelau
+  official_name: ""
+  numeric_code: 772
+  common_name: ""
+  id: 221
+  alpha_3_code: TKL
+  alpha_2_code: TK
+country_00222: 
+  name: Tonga
+  official_name: Kingdom of Tonga
+  numeric_code: 776
+  common_name: ""
+  id: 222
+  alpha_3_code: TON
+  alpha_2_code: TO
+country_00060: 
+  name: Djibouti
+  official_name: Republic of Djibouti
+  numeric_code: 262
+  common_name: ""
+  id: 60
+  alpha_3_code: DJI
+  alpha_2_code: DJ
+country_00034: 
+  name: Bulgaria
+  official_name: Republic of Bulgaria
+  numeric_code: 100
+  common_name: ""
+  id: 34
+  alpha_3_code: BGR
+  alpha_2_code: BG
+country_00008: 
+  name: Anguilla
+  official_name: ""
+  numeric_code: 660
+  common_name: ""
+  id: 8
+  alpha_3_code: AIA
+  alpha_2_code: AI
+country_00115: 
+  name: Kiribati
+  official_name: Republic of Kiribati
+  numeric_code: 296
+  common_name: ""
+  id: 115
+  alpha_3_code: KIR
+  alpha_2_code: KI
+country_00141: 
+  name: Mayotte
+  official_name: ""
+  numeric_code: 175
+  common_name: ""
+  id: 141
+  alpha_3_code: MYT
+  alpha_2_code: YT
+country_00223: 
+  name: Trinidad and Tobago
+  official_name: Republic of Trinidad and Tobago
+  numeric_code: 780
+  common_name: ""
+  id: 223
+  alpha_3_code: TTO
+  alpha_2_code: TT
+country_00061: 
+  name: Dominica
+  official_name: Commonwealth of Dominica
+  numeric_code: 212
+  common_name: ""
+  id: 61
+  alpha_3_code: DMA
+  alpha_2_code: DM
+country_00035: 
+  name: Burkina Faso
+  official_name: ""
+  numeric_code: 854
+  common_name: ""
+  id: 35
+  alpha_3_code: BFA
+  alpha_2_code: BF
+country_00009: 
+  name: Antarctica
+  official_name: ""
+  numeric_code: 10
+  common_name: ""
+  id: 9
+  alpha_3_code: ATA
+  alpha_2_code: AQ
+country_00116: 
+  name: Korea, Democratic People's Republic of
+  official_name: Democratic People's Republic of Korea
+  numeric_code: 408
+  common_name: ""
+  id: 116
+  alpha_3_code: PRK
+  alpha_2_code: KP
+country_00142: 
+  name: Mexico
+  official_name: United Mexican States
+  numeric_code: 484
+  common_name: ""
+  id: 142
+  alpha_3_code: MEX
+  alpha_2_code: MX
+country_00143: 
+  name: Micronesia, Federated States of
+  official_name: Federated States of Micronesia
+  numeric_code: 583
+  common_name: ""
+  id: 143
+  alpha_3_code: FSM
+  alpha_2_code: FM
+country_00117: 
+  name: Korea, Republic of
+  official_name: ""
+  numeric_code: 410
+  common_name: ""
+  id: 117
+  alpha_3_code: KOR
+  alpha_2_code: KR
+country_00036: 
+  name: Burundi
+  official_name: Republic of Burundi
+  numeric_code: 108
+  common_name: ""
+  id: 36
+  alpha_3_code: BDI
+  alpha_2_code: BI
+country_00062: 
+  name: Dominican Republic
+  official_name: ""
+  numeric_code: 214
+  common_name: ""
+  id: 62
+  alpha_3_code: DOM
+  alpha_2_code: DO
+country_00224: 
+  name: Tunisia
+  official_name: Republic of Tunisia
+  numeric_code: 788
+  common_name: ""
+  id: 224
+  alpha_3_code: TUN
+  alpha_2_code: TN
+country_00170: 
+  name: Panama
+  official_name: Republic of Panama
+  numeric_code: 591
+  common_name: ""
+  id: 170
+  alpha_3_code: PAN
+  alpha_2_code: PA
+country_00090: 
+  name: Guernsey
+  official_name: ""
+  numeric_code: 831
+  common_name: ""
+  id: 90
+  alpha_3_code: GGY
+  alpha_2_code: GG
+country_00063: 
+  name: Ecuador
+  official_name: Republic of Ecuador
+  numeric_code: 218
+  common_name: ""
+  id: 63
+  alpha_3_code: ECU
+  alpha_2_code: EC
+country_00037: 
+  name: Cambodia
+  official_name: Kingdom of Cambodia
+  numeric_code: 116
+  common_name: ""
+  id: 37
+  alpha_3_code: KHM
+  alpha_2_code: KH
+country_00118: 
+  name: Kuwait
+  official_name: State of Kuwait
+  numeric_code: 414
+  common_name: ""
+  id: 118
+  alpha_3_code: KWT
+  alpha_2_code: KW
+country_00144: 
+  name: Moldova
+  official_name: Republic of Moldova
+  numeric_code: 498
+  common_name: ""
+  id: 144
+  alpha_3_code: MDA
+  alpha_2_code: MD
+country_00225: 
+  name: Turkey
+  official_name: Republic of Turkey
+  numeric_code: 792
+  common_name: ""
+  id: 225
+  alpha_3_code: TUR
+  alpha_2_code: TR

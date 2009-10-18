@@ -1,0 +1,31 @@
+<%= javascript_include_tag 'fckeditor/fckeditor' %>
+
+
+<% if @plantilla.new_record?  %>
+<h1>Nueva plantilla plantilla</h1>
+<% else %>
+<h1>Modificando plantilla</h1>
+<%= link_to 'Mostrar', @plantilla %> |
+<% end %>
+<%= link_to 'Regresar a listado', plantillas_path %>
+
+<% form_for(@plantilla) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :texto %><br />
+    <%= fckeditor_textarea("plantilla", "texto", :toolbarSet => 'Ccp', :width => '95%', :height => '400px') %>
+  </p>
+  <p>
+    <%= f.submit "Registrar" %>
+  </p>
+  
+  
+  
+<% end %>
+
+

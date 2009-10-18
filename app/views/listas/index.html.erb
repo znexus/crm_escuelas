@@ -1,0 +1,44 @@
+<h1>Listado de <%= current_user %></h1>
+
+<div class="f" id="envio_lista">
+ <% form_remote_tag(:url => { :action=>"envios",:controller=>"front" },
+			:before=>"Element.show('indica_envio')",
+			:complete=>"Element.hide('indica_envio')",
+      :update => "envio_lista") do -%>
+   
+    <fieldset>
+      <legend >
+      Envio por email 
+      <%= image_tag("dots-white.gif", :style=>"display:none", :id=>"indica_envio") %>
+      </legend>
+      <%= label_tag :plantilla %>
+      <%= select_tag "plantilla_id", options_for_select(
+                 Plantilla.find(:all, :order=>"nombre").collect {|p| [p.nombre, p.id] },
+                 {:prompt => "-Seleccionar plantilla a enviar-"})  %>
+
+      <p> <%= submit_tag "Enviar" %></p>
+    </fieldset>
+  <% end %>
+</div>
+<p><%= link_to 'Borrar toda la lista', delete_all_lista_path(0), 
+:confirm => "Borraré toda la lista, ¿Estás segur@?", :method => :delete %>
+</p>
+
+<table>
+  <tr>
+    <th>Objeto</th>
+    <th>Email</th>
+    <th>¿Enviado?</th>
+    <th></th>
+  </tr>
+
+<% for lista in @listas %>
+  <tr>
+    <td><%= link_to lista.listable, lista.listable %></td>
+    <td><%= lista.listable.email %></td>
+    <td><%= lista.enviado ? "Sí" : "No" %></td>
+    <td><%= link_to 'Quitar', lista, :confirm => "Quitaré a #{lista.listable} de la lista ¿Estás segur@?", :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+

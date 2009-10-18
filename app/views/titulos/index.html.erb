@@ -1,0 +1,21 @@
+<h1>Listing titulos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th colspan="3">Acciones</th>
+  </tr>
+
+<% for titulo in @titulos %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%=h titulo.nombre %></td>
+    <td><%= link_to 'Show', titulo %></td>
+    <td><%= link_to 'Edit', edit_titulo_path(titulo) %></td>
+    <td><%= link_to 'Destroy', titulo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New titulo', new_titulo_path %>

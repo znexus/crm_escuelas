@@ -1,0 +1,42 @@
+<h1>Instituciones</h1>
+
+<div class="f">
+
+  <% form_for(@institucion) do |f| %>
+    
+    <fieldset>
+      
+      <% if @institucion.new_record? %>
+        <legend>Nueva institución</legend>
+      <% else %>
+        <legend>Modificando a <%= @institucion.nombre %></legend>
+      <% end %>
+      
+      <%= error_messages_for :institucion %>
+      
+      <%= f.label :nombre%>
+      <%= f.text_field :nombre %><br />
+      
+      <%= f.label :ruc%>
+      <%= f.text_field :ruc %><br />
+
+      <%= f.select :tipo,
+                 TipoVinculo::TIPOS.map{|disp,value| value},
+                 :prompt => "Seleccionar:"  %><br />
+
+      <p>Tags(separados por comas): 
+      <%= f.text_field :tag_list%>
+      <%= image_tag('dots-white.gif',:id=>"spinner",:style=>"display:none") %>
+      <div id="tags" class="auto_complete"></div>
+      <%= auto_complete_field :institucion_tag_list, :update=>"tags",
+    					:url=>{:action=>"find",:controller=>"tags"},
+    					:tokens => ",",
+    					:indicator => "spinner" %>
+      </p>
+
+      <%= f.submit "Registrar" %>
+      
+  <% end %>
+</div>
+<%= link_to 'Ver Ficha', @institucion unless @institucion.new_record?  %>
+<%= link_to 'Cancelar y Regresar', institucions_path %>

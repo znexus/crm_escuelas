@@ -1,0 +1,4 @@
+
+          page.replace_html 'relacion'+@relacion.id.to_s, :partial => "edit"
+          page.visual_effect :highlight, 'relacion'+@relacion.id.to_s
+          page.hide 'indica_relacions'

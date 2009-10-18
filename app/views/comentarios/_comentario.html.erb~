@@ -1,0 +1,5 @@
+  <li>
+      <p><%= comentario.created_at.to_s(:short) %> | por <%= comentario.user %></p>
+      <p><%= comentario.texto %></p>
+      <p><%= image_tag("icons/clock.png") if comentario.recordatorio %> <%= comentario.recordatorio.to_s(:short)%></p>
+  </li>

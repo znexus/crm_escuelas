@@ -1,0 +1,65 @@
+<div class="f">
+<% remote_form_for(@address, :update=>"addresses",
+        :before    => "Element.show('spinner')",  
+        :complete  => "Element.hide('spinner'); new Effect.Highlight('addresses', {duration:0.7})" 
+		) do |f| %>
+
+  <fieldset>
+
+  <% if @address.new_record? %>
+      <legend>Nueva dirección</legend>
+  <% else %>
+      <legend>Modificando dirección</legend>
+  <% end %>
+
+
+     <%= f.error_messages %>
+
+    <%= f.label :street_1, "Dirección" %>
+    <%= f.text_field :street_1 %><br />
+
+    <%= f.label :street_2, "Dirección (cont..)" %>
+    <%= f.text_field :street_2 %><br />
+
+     <label for="address_country">País</label>   
+     <%= f.collection_select(:country_id, @countries, 
+							:id, :name, {}, 
+							{:onchange => remote_function(
+															:url=> { :controller => :addresses, :action=> :regions_in_country }, 
+															:with => "'id=' + this.value",
+															:update => "select_region" ) }
+				 ) %>
+
+     <div id="select_region">
+       <%= render :partial=>"addresses/regions", :locals=> { :regions => @regions, :address => @address } %>
+     </div>   
+
+    <%= f.label :city, "Zona, Distrito" %>
+    <%= f.text_field :city %><br />
+
+    <%= f.label :custom_region, "Urb, referencia" %>
+    <%= f.text_field :custom_region %><br />
+
+    <%= f.label :postal_code, "Código postal" %>
+    <%= f.text_field :postal_code %><br />
+
+    <%= f.label :telefonos %>
+    <%= f.text_field :telefonos %><br />
+
+    <%= f.hidden_field :addressable_id %>
+    <%= f.hidden_field :addressable_type %>
+
+    <%= f.submit "Registrar" %>
+    | 
+    <%= link_to_remote 'Cancelar', 
+ 				:update=>"addresses", 
+        :before    => "Element.show('spinner')",  
+        :complete  => "Element.hide('spinner'); new Effect.Highlight('addresses', {duration:0.7})",  
+				:url => addresses_path(:addressable_type => @address.addressable_type,
+												:addressable_id => @address.addressable_id),
+				:method=>"get" %>
+        
+  </fieldset>
+
+<% end %>
+</div>

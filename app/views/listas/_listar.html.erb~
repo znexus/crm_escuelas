@@ -1,0 +1,24 @@
+<div id="listar_<%= objeto.id %>">
+ <% lista = objeto.listas.find(:all, :conditions=>["user_id = ?",current_user.id]).first
+    if lista
+     	imagen = 'icons/tick.png'
+     	texto = "Ya está en su lista. Clic para quitarla"
+     	method = "put"
+   	else
+     	imagen = 'icons/cross.png'
+     	lista = Lista.new
+     	texto = "No está en su lista. Clic para agregarla"
+     	method = "post"
+    end -%>
+
+ <% form_remote_tag :url => polymorphic_path([objeto, lista]),
+                    :before => "Element.show('spinner_listar_"+objeto.id.to_s+"')" ,
+                    :complete => "Element.hide('spinner_listar_"+objeto.id.to_s+"')" ,
+                    :update => "listar_"+objeto.id.to_s,
+                    :method => method  do -%>
+     <%= image_submit_tag imagen, :id=>"check"+objeto.id.to_s %>
+     <%= submit_tag texto %>
+     <%= image_tag "dots-white.gif", :style=>"display:none", :id=>"spinner_listar_"+objeto.id.to_s %>
+ <% end -%>
+ 
+</div>

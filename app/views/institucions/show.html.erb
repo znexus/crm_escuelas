@@ -1,0 +1,58 @@
+<h1> I<%= link_to @institucion.id, @institucion %>  <%= @institucion %></h1>
+
+<div id="acciones">
+<%= link_to image_tag("icons/pencil.png")+'Modificar', edit_institucion_path(@institucion) %> |
+<%= link_to image_tag('icons/delete.png')+'Eliminar', @institucion, :confirm => 'Eliminaré definitivamente a la institucion. ¿Estás seguro?', :method => :delete %>
+</div>
+
+<p>RUC: <%=h @institucion.ruc %></p>
+
+<%= render :partial=>"partials/tags_list", :locals=>{:obj=>@institucion} %>
+
+<h2>Direcciones
+<%= image_tag 'dots-white.gif', :style => "display:none", :id=>"spinner" %>
+</h2>
+
+<p><%= link_to_remote image_tag('icons/add.png')+'Nueva',
+ 				:title => "Crear nueva dirección",
+				:update=>"addresses", 
+        :before    => "Element.show('spinner')",  
+        :complete  => "Element.hide('spinner'); new Effect.Highlight('addresses', {duration:0.7})",  
+				:url=> new_address_path(:addressable_id=>@institucion.id,:addressable_type=>"Institucion") %>
+</p>
+
+<div id="addresses">
+  <%= render :partial=>"addresses/lista", :locals=>{:addresses=>@institucion.addresses}  %>  
+</div>
+
+<h2>Personas relacionadas
+<%= image_tag 'dots-white.gif', :style => "display:none; positioin:relative", :id=>"indica_relacions" %>
+</h2>
+
+<p><%= link_to_remote image_tag('icons/add.png')+'Nuevo',
+ 				:update=>"relacion", 
+        :before    => "Element.show('indica_relacions')",  
+        :complete  => "Element.show('relacion'); Element.hide('indica_relacions'); new Effect.Highlight('relacion', {duration:0.7})",  
+				:url => new_institucion_relacion_path(@institucion),
+				:method => :get %>
+</p>
+
+<div id="relacions">
+  <div id="relacion"></div>
+  <%= render :partial=>"relacions/lista", 
+			:locals=>{:relacions=>@institucion.relacions.find(:all, 
+			:include=>[:tipo_vinculo, :institucion, :persona])}  %>  
+</div>
+
+<h2>Notas y recordatorios</h2>
+
+<%= render :partial => "comentarios/comentarios", 
+      :locals=>{:objeto => @institucion, 
+                #:comentarios => @institucion.comentarios.find(:all,:order=>"created_at desc")
+                :comentarios => @institucion.comentarios.paginate(:order=>"created_at desc", 
+                                          :page =>  params[:page] ||= 1) 
+               }
+%>
+
+<p></p>
+

@@ -1,0 +1,61 @@
+<h1> F<%= link_to @familia.id, @familia %> <%=h @familia %></h1>
+
+<%= render :partial=>"partials/tags_list", :locals=>{:obj=>@familia} %>
+
+<div id="acciones">
+<%= link_to image_tag("icons/pencil.png")+'Modificar', edit_familia_path(@familia) %> |
+<%= link_to image_tag('icons/delete.png')+'Eliminar', @familia, :confirm => 'Eliminaré definitivamente a la familia. ¿Estás seguro?', :method => :delete %>
+</div>
+
+
+
+<p><strong>Padre</strong>: <%= link_to(@familia.padre, @familia.padre) unless @familia.padre.blank? %>
+  <%= render(:partial=>"listas/listar", :locals=>{:objeto=>@familia.padre}) unless @familia.padre.blank?  %></p>
+
+<p><strong>Madre</strong>: <%= link_to(@familia.madre, @familia.madre) unless @familia.madre.blank? %>
+  <%= render(:partial=>"listas/listar", :locals=>{:objeto=>@familia.madre}) unless @familia.padre.blank?  %></p>
+
+
+<div id="familiares">
+<p>Hijos: </p>
+  <ol>
+  <% @familia.personas.each do |persona| %>
+    <% unless (@familia.padre == persona or @familia.madre == persona) %>
+    <li> <%= "Padre: " if @familia.padre == persona %> <%= "Madre: " if @familia.madre == persona %> <%= link_to(persona, persona) %> 
+        <%= render(:partial=>"listas/listar", :locals=>{:objeto=>persona}) %>
+    </li>
+    <% end %>
+  <% end %>
+  </ol>
+</div>
+
+
+<h2>Direcciones
+<%= image_tag 'dots-white.gif', :style => "display:none", :id=>"spinner" %>
+</h2>
+<p><%= link_to_remote image_tag('icons/add.png')+'Nueva',
+ 				:update=>"addresses", 
+        :before    => "Element.show('spinner')",  
+        :complete  => "Element.hide('spinner'); new Effect.Highlight('addresses', {duration:0.7})",  
+				:url=> new_address_path(:addressable_id=>@familia.id,:addressable_type=>"Familia") %>
+</p>
+<div id="addresses">
+  <%= render :partial=>"addresses/lista", :locals=>{:addresses=>@familia.direcciones}  %>  
+</div>
+
+
+<h2>Notas y recordatorios</h2>
+
+<%= #render :partial => "comentarios/comentarios", 
+    #  :locals=>{:objeto => @familia, 
+    #            :comentarios => @familia.comentarios.paginate(:order=>"created_at desc", 
+    #                                      :page =>  params[:page] ||= 1) 
+    #           }
+    render :partial => "comentarios/comentarios", 
+      :locals=>{:objeto => @familia, 
+                :comentarios => @familia.comentarios.find(:all,:order=>"created_at desc") 
+               }    
+%>
+
+<p></p>
+

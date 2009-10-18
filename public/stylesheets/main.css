@@ -1,0 +1,334 @@
+* {
+  padding:0;
+  margin:0
+}
+img{border:0}
+body 
+{ 
+  background-color:#fff;
+  color: #333;
+}
+body, p, ol, ul, td {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+th
+{
+  background:#bbb;
+  color:#fff;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color:#000; padding: 2px; text-decoration:underline; }
+a img{vertical-align:text-bottom;}
+a:visited { color: #222;}
+a:hover { 
+ color:#fff;
+ background-color:#0033bb
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6 
+{padding: 1.0em 0 0em;
+/*border-bottom:1px solid #ccc*/}
+h1 {font-size: 196%; padding-top:.5em; border:none}
+h2 {font-size: 136%}
+h3 {font-size: 126%}
+h4 {font-size: 116%}
+h5 {font-size: 106%}
+h6 {font-size: 96%}
+p{margin: .3em 0 .1em}
+
+li{
+  margin:0 0 0 1.5em;
+}
+#warp
+{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#arriba
+{
+  color:#fff;
+  margin:0;
+  padding:0;
+  background-color:#A6914B;
+}
+#cabecera
+{
+  width:96%;
+  margin:0 auto;
+}
+#center
+{
+  width:100%;
+  background-color:#fff;
+}
+#central
+{
+  margin-left:20px;
+}
+#herramientas
+{
+  width:300px;
+
+  float:right;
+  background-color:#b2d3d4;
+  padding:10px;
+}
+#footer
+{
+  
+}
+div.uploadStatus {
+  margin: 5px;
+}
+
+div.progressBar {
+  margin: 5px;
+}
+
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
+
+.borrado
+{
+  clear:both;
+}
+.buscar
+{
+
+}
+.creador
+{ 
+  
+}
+/*dos columnas*/
+#izquierda
+{
+  width:69%;
+  float:left;
+}
+#derecha
+{
+  width:29%;
+  float:left;
+}
+
+/*para las listas con colorcitos*/
+.list-line-odd td
+{
+  background-color:#fff
+}
+.list-line-even td
+{
+  background-color:#eee   
+}
+
+/*Formularios*/
+.f fieldset
+{
+  background-image:url('/images/degrade_verde.png');
+  width:500px;
+  margin:0px;
+  padding:10px;
+}
+.f legend
+{
+  font-size:1.2em;
+  font-weight: bold;
+  background-color:#fff
+}
+.f label{
+float: left;
+width: 120px;
+font-weight: bold;
+}
+
+.f input, .f textarea{
+width: 220px;
+margin-bottom: 5px;
+}
+
+.f textarea{
+width: 250px;
+height: 150px;
+}
+
+.boxes{
+width: 1em;
+}
+
+#submitbutton{
+margin-left: 120px;
+margin-top: 5px;
+width: 90px;
+}
+
+.f form br{
+clear: left;
+}
+
+.fieldWithErrors {
+  color:red;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px 0;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+  margin: 0 20px
+}
+/*Autocompeltado*/
+div.auto_complete {
+  width: 350px;
+  background: #fff ;
+}
+div.auto_complete ul {
+  border:1px solid #888 ;
+  margin:0;
+  padding:0;
+  width:100%;
+  list-style-type:none;
+}
+div.auto_complete ul li {
+  margin:0;
+  padding:3px;
+}
+div.auto_complete ul li.selected {
+  background-color: #ffb ;
+}
+div.auto_complete ul strong.highlight {
+  color: #800 ;
+  margin:0;
+  padding:0;
+}
+
+#menu_session
+{
+  margin: 3px 5px 0px auto;
+  float:right;
+}
+#menu_session a
+{
+  color: #fff;
+  font-weight:bold 
+}
+/*_____________Paginacion_________________-*/
+
+.ccp_pagination {
+  background: white;
+  width:490px;
+  height:22px;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  text-align:right;
+    padding: 8px 0 4px 0 ;
+  /* self-clearing method: */ }
+
+.ccp_pagination a, .ccp_pagination span {
+  padding: .2em .5em;
+  margin-left: 5px; }
+
+.ccp_pagination span.disabled {
+  color: #999;
+  border: 1px solid #DDD; }
+
+.ccp_pagination span.current {
+  font-weight: bold;
+  background: #fff;
+  color: #cc0000;
+  border: 1px solid #000; }
+
+.ccp_pagination a {
+  text-decoration: none;
+  color: #105CB6;
+  border: 1px solid #336666; }
+
+  .ccp_pagination a:hover, .ccp_pagination a:focus {
+    color: #003;
+    border-color: #666;
+    background-color:#ccc }
+
+.ccp_pagination .page_info {
+  background: #2E6AB1;
+  color: white;
+  padding: .4em .6em;
+  width: 22em;
+  margin-bottom: .3em;
+  text-align: center; }
+
+  .ccp_pagination .page_info b {
+    color: #003;
+    background: #6aa6ed;
+    padding: .1em .25em; }
+
+.ccp_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+* html .ccp_pagination {
+  height: 1%; }
+
+*:first-child+html .ccp_pagination {
+  overflow: hidden; }
+  
+/*________Comentarios______-*/
+.comentarios_form_izquierda
+{ float:left; width:270px}
+.comentarios_form_derecha
+{ float:left; width:220px;
+ font-size:0.85em}
+
+/*otras clases*/
+.agregar_lista
+{
+  
+}
+
+.agregar_lista, .agregar_lista form, .agregar_lista form input
+{
+  display:inline;
+}

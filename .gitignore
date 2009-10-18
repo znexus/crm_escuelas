@@ -1,0 +1,12 @@
+public/uploads/*
+public/images/icons/*
+public/javascripts/fckeditor/*
+log/*
+tmp/*
+config/database.yml
+.loadpath
+.project
+.settings
+config/development.sphinx.conf
+db/sphinx/
+rdoc/*

@@ -1,0 +1,13 @@
+<p>
+  <b>Nombre:</b>
+  <%=h @plantilla.nombre %>
+</p>
+
+<p>
+  <b>Texto:</b>
+  <%=h @plantilla.texto %>
+</p>
+
+
+<%= link_to 'Edit', edit_plantilla_path(@plantilla) %> |
+<%= link_to 'Back', plantillas_path %>

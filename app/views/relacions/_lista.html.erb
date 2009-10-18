@@ -1,0 +1,5 @@
+<ol id="relacions_list">
+<% for relacion in relacions %>
+  <%= render :partial => "relacions/linea", :locals => { :relacion=> relacion } %>
+<% end %>
+</ol>

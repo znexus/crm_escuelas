@@ -1,0 +1,20 @@
+<h1>Listing Tags</h1>
+<%= link_to 'New tag', new_tag_path %>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nombre</th>
+    <th colspan="3">Acciones</th>
+  </tr>
+
+<% for tag in @tags %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= tag.id %></td>
+    <td><%= tag.name%></td>
+    <td><%= link_to 'Show', tag %></td>
+    <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
+    <td><%= link_to 'Destroy', tag, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+

@@ -1,0 +1,22 @@
+<h1>Listing plantillas</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Texto</th>
+  </tr>
+
+<% for plantilla in @plantillas %>
+  <tr>
+    <td><%= plantilla.nombre %></td>
+    <td><%= truncate_words plantilla.texto %></td>
+    <td><%= link_to 'Show', plantilla %></td>
+    <td><%= link_to 'Edit', edit_plantilla_path(plantilla) %></td>
+    <td><%= link_to 'Destroy', plantilla, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New plantilla', new_plantilla_path %>

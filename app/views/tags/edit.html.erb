@@ -1,0 +1,22 @@
+
+<% if @tag.new_record? %>
+<h1>Nuevo tag</h1>|
+<% else %>
+<h1>Modificando tag</h1>
+<%= link_to 'Mostrar', @tag %> 
+<% end %>
+
+<%= link_to 'Regresar', tags_path %>
+
+<% form_for(@tag) do |f| %>
+  <%= f.error_messages %>
+ <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Registrar" %>
+  </p>
+<% end %>
+
+

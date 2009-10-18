@@ -1,0 +1,21 @@
+
+page.replace_html "comentario_form_#{@objeto.id}",
+      :partial=>"comentario_form", :locals=>{:objeto=>@objeto, :comentario=>Comentario.new}
+
+page.insert_html :top, "comentarios_lista_#{@objeto.id}",
+      :partial=>"comentario", :object=>@comentario
+
+page.visual_effect :highlight, "lista_comentarios_#{@objeto.id}"
+
+page.replace_html "comentario_mensaje_#{@objeto.id}",
+      "<p class='verde'>Su comentario ha sido registrado correctamente.</p>"
+page.show "comentario_mensaje_#{@objeto.id}" 
+
+page.visual_effect :highlight, "comentario_mensaje_#{@objeto.id}"
+
+page.delay(3) do
+  page.visual_effect :fade, "comentario_mensaje_#{@objeto.id}"
+  page.replace_html "comentario_mensaje_#{@objeto.id}", ''
+  page.visual_effect :toggle_blind, "comentario_form_#{@objeto.id}"
+end
+

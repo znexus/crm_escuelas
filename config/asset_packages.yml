@@ -1,0 +1,23 @@
+--- 
+javascripts: 
+- base: 
+  - prototype
+  - effects
+  - application
+  - controls
+  - dragdrop
+  - tabber
+- calendar:
+  - dhtml_calendar/datebox_engine
+  - dhtml_calendar/calendar
+  - dhtml_calendar/lang/calendar-es
+  - dhtml_calendar/calendar-setup
+stylesheets: 
+- base: 
+  - tabber
+  - scaffold
+  - date-picker
+  - main
+- calendar:
+  - dhtml_calendar/dhtml_calendar
+  - dhtml_calendar/calendar-blue

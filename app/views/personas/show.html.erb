@@ -1,0 +1,75 @@
+<h1> P<%= link_to @persona.id, @persona %> <%= @persona.nombre_completo  %> </h1>
+
+<div id="acciones">
+  <%= link_to image_tag("icons/pencil.png")+'Modificar', edit_persona_path(@persona) %> |
+  <%= link_to image_tag('icons/delete.png')+'Eliminar', @persona, :confirm => 'Eliminaré definitivamente a la persona. ¿Estás seguro?', :method => :delete %>
+
+  <%= render :partial=>"listas/listar", :locals=>{:objeto=>@persona} %>
+</div>
+
+<p>
+  Familia: <%= if(@persona.familia_id) then link_to(@persona.familia,@persona.familia ) else "-no registrado-" end %>
+</p>
+
+<p>
+  Email: <%=h @persona.email %>
+</p>
+
+<p>
+  Nacimiento: <%=h @persona.nacimiento ||="-no registrado-" %>, sexo: <%=h @persona.sexo %>
+</p>
+
+<p>
+  Asist Card: <%= image_tag("icons/tick.png") if @persona.asistcard %>
+</p>
+<p>
+  Etiquetas: <%= image_tag("icons/tick.png") if  @persona.etiquetas %>
+</p>
+
+<%= render :partial=>"partials/tags_list", :locals=>{:obj=>@persona} %>
+
+<h2>Direcciones 
+<%= image_tag 'dots-white.gif', :style => "display:none; position:relative", :id=>"spinner" %>
+</h2>
+<p><%= link_to_remote image_tag('icons/add.png')+'Nueva',
+ 				:update=>"addresses", 
+        :before    => "Element.show('spinner')",  
+        :complete  => "Element.hide('spinner'); new Effect.Highlight('addresses', {duration:0.7})",  
+				:url=> new_address_path(:addressable_id=>@persona.id,:addressable_type=>"Persona")
+		%>
+</p>
+<div id="addresses">
+  <%= render :partial=>"addresses/lista", :locals=>{:addresses=>@persona.addresses}  %>  
+</div>
+
+
+<h2>Relación con instituciones
+<%= image_tag 'dots-white.gif', :style => "display:none; positioin:relative", :id=>"indica_relacions" %>
+</h2>
+
+<p><%= link_to_remote image_tag('icons/add.png')+'Nuevo',
+ 				:update=>"relacion", 
+        :before    => "Element.show('indica_relacions')",  
+        :complete  => "Element.show('relacion'); Element.hide('indica_relacions'); new Effect.Highlight('relacion', {duration:0.7})",  
+				:url => new_persona_relacion_path(@persona),
+				:method => :get %>
+</p>
+<div id="relacions">
+  <div id="relacion"></div>
+  <%= render :partial=>"relacions/lista", 
+			:locals=>{:relacions=>@persona.relacions.find(:all, :conditions=>"tipo_vinculos.tipo ='Empresarial' ",
+			:include=>[:tipo_vinculo, :institucion, :persona])}  %>  
+</div>
+
+
+<h2>Notas y recordatorios</h2>
+
+<%= render :partial => "comentarios/comentarios", 
+      :locals=>{:objeto => @persona, 
+                :comentarios => @persona.comentarios.find(:all, :order=>"created_at desc")
+                #:comentarios => @persona.comentarios.paginate(:order=>"created_at desc", 
+                #                          :page =>  params[:page] ||= 1) 
+               }
+%>
+
+<p></p>

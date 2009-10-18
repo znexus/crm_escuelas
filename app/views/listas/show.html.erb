@@ -1,0 +1,18 @@
+<p>
+  <b>User:</b>
+  <%=h @lista.user_id %>
+</p>
+
+<p>
+  <b>Objeto type:</b>
+  <%=h @lista.objeto_type %>
+</p>
+
+<p>
+  <b>Objeto:</b>
+  <%=h @lista.objeto_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_lista_path(@lista) %> |
+<%= link_to 'Back', listas_path %>

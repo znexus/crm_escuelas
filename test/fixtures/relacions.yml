@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  persona_id: 1
+  institucion_id: 1
+  tipo_vinculo_id: 1
+  nombre: MyString
+  year: 1
+  gradoseccion: MyString
+  email: MyString
+  telefono: MyString
+
+two:
+  persona_id: 1
+  institucion_id: 1
+  tipo_vinculo_id: 1
+  nombre: MyString
+  year: 1
+  gradoseccion: MyString
+  email: MyString
+  telefono: MyString

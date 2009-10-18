@@ -1,0 +1,17 @@
+<h1>Editing titulo</h1>
+
+<%= error_messages_for :titulo %>
+
+<% form_for(@titulo) do |f| %>
+  <p>
+    <b>Nombre</b><br />
+    <%= f.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @titulo %> |
+<%= link_to 'Back', titulos_path %>

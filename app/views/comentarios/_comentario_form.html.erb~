@@ -1,0 +1,51 @@
+<div class="f">
+  <% remote_form_for(comentario, :html => {:class=>"comentarios_form"},
+			:url=> polymorphic_url(comentario, objeto), 
+			:before=>"Element.show('indica_comentario_#{objeto.id}')",
+			:complete=>"Element.hide('indica_comentario_#{objeto.id}')") do |f| 
+	%>
+  <fieldset>
+    <legend >
+    Nota para <%= objeto %>
+    <%= image_tag("dots-white.gif", :style=>"display:none", :id=>"indica_comentario_#{objeto.id}") %>
+    </legend>
+
+      <%= f.error_messages %>
+      <div id="comentario_mensaje_<%= objeto.id %>"></div>
+      
+      <div class="comentarios_form_izquierda">
+        
+
+        <%= f.text_area :texto, :cols=>80, :rows=>8 %>
+
+
+       </div>  
+       
+       <div class="comentarios_form_derecha">
+         <p><%= f.label :tipo %><br />
+         <%= f.select :tipo,
+                     Comentario::TIPOS,
+                     :prompt => "-Seleccionar tipo-"  %>
+         </p>
+
+          <p><%= f.label :recordatorio, "Recordatorio" %>  <br />
+
+         <%= calendar_box :comentario, :recordatorio,
+               { :class => 'date',
+                 :field_title => 'Fecha de recordatorio',
+                 :button_title => 'Mostrar calendario'},
+               { :firstDay => 1,
+                 :range => [Time.now.year, Time.now.year + 5],
+                 :step => 1,
+                 :showOthers => true,
+                 :cache => true,
+                 :showsTime => true }
+         %>
+          </p>
+
+       </div>
+       <div class="borrado">
+       <p> <%= f.submit "Registrar" %></p>
+  </fieldset>
+  <% end %>
+</div>

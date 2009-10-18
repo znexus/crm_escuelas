@@ -1,0 +1,15 @@
+<h1>Tipo de Vínculo</h1>
+
+<p>
+  <b>Nombre:</b>
+  <%=h @tipo_vinculo.nombre %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%=h @tipo_vinculo.tipo %>
+</p>
+
+
+<%= link_to 'Edit', edit_tipo_vinculo_path(@tipo_vinculo) %> |
+<%= link_to 'Back', tipo_vinculos_path %>

@@ -1,0 +1,28 @@
+<h1>Listing comentarios</h1>
+
+<table>
+  <tr>
+    <th>Texto</th>
+    <th>Comentable</th>
+    <th>Comentable type</th>
+    <th>Recordatorio</th>
+    <th>Tipo</th>
+  </tr>
+
+<% for comentario in @comentarios %>
+  <tr>
+    <td><%=h comentario.texto %></td>
+    <td><%=h comentario.comentable_id %></td>
+    <td><%=h comentario.comentable_type %></td>
+    <td><%=h comentario.recordatorio %></td>
+    <td><%=h comentario.tipo %></td>
+    <td><%= link_to 'Show', comentario %></td>
+    <td><%= link_to 'Edit', edit_comentario_path(comentario) %></td>
+    <td><%= link_to 'Destroy', comentario, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New comentario', new_comentario_path %>

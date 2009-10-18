@@ -1,0 +1,2 @@
+module TipoVinculosHelper
+end
